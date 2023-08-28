@@ -1,20 +1,26 @@
 .persona-container {
     display: flex;
     padding: 20px;
+    justify-content: space-between;
   }
   
   .picture-section {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    border: 1px solid navy; /* Add a 2px solid navy blue border */
+    box-sizing:content-box;
+    background-image: url("/public/assets/images/darkback.webp");
   }
   
   
   .picture-section img {
-    width: 100% !important;
-    height: 100%;
-    border-radius: 20px 20px 20px 20px;
+    width: 60% !important;
+    height: auto;
+    border-radius: 0px 0px 0px 0px;
   }
   
   
@@ -26,18 +32,19 @@
     justify-content: center;
     width: 50%;
     margin-right: 15px;
+    padding: 20px;
   }
   
-  .info-box {
-    display: flex;
-    align-items: left;
-    margin: 10px 0;
-    color: ash;
-  }
+  
   
   .icon {
-    font-size: 1.5rem;
+    font-size: 30px;
     margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    
+    
+    
   }
   
   .bio-service {
@@ -67,16 +74,18 @@
   }
   
   .third-section {
-    flex: 1;
+   
     display: flex;
-    width: 10%;
+    width: 5%;
+    
+   
   }
   
   .navy-blue-part {
-    flex: 2;
+    width:100%;
     background-color: #003366; /* Navy blue background */
     border-radius: 0px 20px 20px 0px;
-    width: 50%; 
+    
   }
   
 
@@ -86,6 +95,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px;
+    
   }
   
   
@@ -105,5 +115,14 @@
   }
   
   
-
+  .info{
+    background-color: #f2f2f2; /* Set the background color for the box */
+    padding: 2px;
+    border-radius: 5px;
+    margin-left: 1px; /* Add spacing between icon and box */
+    border: 2px;
+    border-color: #003366;
+    display: flex;
+    width: 50%;
+  }
   

@@ -10,8 +10,7 @@ import FullUserdetails  from './Pages/FullUserdetails';
 import Navigation2 from './Components/Navigationbar2/Navigation2';
 import UpdateUserDetails from './Pages/UpdateUserDetails';
 import UserPersona from './Components/UserPersona/UserPersona';
-
-
+import FullUserPersona  from './Pages/fullUserPersona';
 function App() {
   return (
     <div className="App">
@@ -27,6 +26,7 @@ function App() {
           <Route path='/Navigation2' element={<Navigation2/>}/> 
           <Route path='/UpdateUserDetails' element={<UpdateUserDetails/>}/>
           <Route path='/UserPersona' element={<UserPersona/>}/>
+          <Route path='/FullUserPersona' element={<FullUserPersona/>}/>
 
         </Routes>
       </BrowserRouter>

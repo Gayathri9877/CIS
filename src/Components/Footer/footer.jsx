@@ -37,31 +37,31 @@ const Footer = () => {
       <div className="column">
   <div className="title">Social Media</div>
   <div className="social-link">
-    <div className="social-icon">
+    <div className="social-icon1">
       <img src='assets\images\facebook.png' alt='Facebook' className='social-img' />
       <span>@sl_policemedia</span>
     </div>
   </div>
   <div className="social-link">
-    <div className="social-icon">
+    <div className="social-icon1">
       <img src='assets\images\instagram.png' alt='Instagram' className='social-img' />
       <span>@sl_policemedia</span>
     </div>
   </div>
   <div className="social-link">
-    <div className="social-icon">
+    <div className="social-icon1">
       <img src='assets\images\tiktok.png' alt='TikTok' className='social-img' />
       <span>@sl_policemedia</span>
     </div>
   </div>
   <div className="social-link">
-    <div className="social-icon">
+    <div className="social-icon1">
       <img src='assets\images\twitter.png' alt='Twitter' className='social-img' />
       <span>@sl_policemedia</span>
     </div>
   </div>
   <div className="social-link">
-    <div className="social-icon">
+    <div className="social-icon1">
       <img src='assets\images\youtube.png' alt='YouTube' className='social-img' />
       <span>@sl_policemedia</span>
     </div>
