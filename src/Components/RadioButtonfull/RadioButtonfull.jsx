@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import './RadioButtonExample.css';
+import './RadioButtonfull.css';
 
 const RegistrationPage = () => {
   const [crimeID, setCrimeID] = useState('');
-  
   const [marriageStatus, setMarriageStatus] = useState('');
   const [inCustody, setInCustody] = useState('');
   const [crimeJustified, setCrimeJustified] = useState('');
@@ -17,13 +16,26 @@ const RegistrationPage = () => {
   const [address, setAddress] = useState('');
   const [branch, setBranch] = useState('');
   const [photo, setPhoto] = useState(null);
+  const [description, setDescription] = useState('');
+  const [dataList, setDataList] = useState([]);
+  const [isAddFormVisible, setIsAddFormVisible] = useState(false);
+  const [selectedRows, setSelectedRows] = useState([]);
 
-
-
-  const handlePhotoChange = (event) => {
-    const selectedPhoto = event.target.files[0];
-    setPhoto(selectedPhoto);
+  const toggleAddForm = () => {
+    setIsAddFormVisible(!isAddFormVisible);
   };
+
+  const toggleRowSelection = (id) => {
+    if (selectedRows.includes(id)) {
+      setSelectedRows(selectedRows.filter((rowId) => rowId !== id));
+    } else {
+      setSelectedRows([...selectedRows, id]);
+    }
+  };
+ 
+  
+
+ 
 
   const handleRegistration = () => {
     // Handle the form submission here
@@ -47,6 +59,13 @@ const RegistrationPage = () => {
     });
   };
 
+
+  
+  const handlePhotoChange = (event) => {
+    const selectedPhoto = event.target.files[0];
+    setPhoto(selectedPhoto);
+  };
+
   const handleMarriageStatusChange = (event) => {
     setMarriageStatus(event.target.value);
   };
@@ -57,6 +76,34 @@ const RegistrationPage = () => {
 
   const handleCrimeJustifiedChange = (event) => {
     setCrimeJustified(event.target.value);
+  };
+
+  const handleAddData = () => {
+    if (crimeID.trim() !== '' && description.trim() !== '') {
+      const newDataItem = {
+        id: Math.random().toString(36).substring(7),
+        crimeID: crimeID,
+        description: description,
+      };
+
+      setDataList([...dataList, newDataItem]);
+      setCrimeID('');
+      setDescription('');
+      setIsAddFormVisible(false);
+    }
+  };
+
+  const handleRemoveSelectedRows = () => {
+    const updatedDataList = dataList.filter((item) => !selectedRows.includes(item.id));
+    setDataList(updatedDataList);
+    setSelectedRows([]);
+  };
+
+   // Listen for Enter key press to add data
+   const handleEnterKey = (event) => {
+    if (event.key === 'Enter') {
+      handleAddData();
+    }
   };
 
   return (
@@ -76,6 +123,7 @@ const RegistrationPage = () => {
           <p className='p1'>Marriage Status</p>
           <label className="radio-label">
             <input
+              className="lavender-radio"
               type="radio"
               value="Alive"
               checked={marriageStatus === 'Alive'}
@@ -85,6 +133,7 @@ const RegistrationPage = () => {
           </label>
           <label className="radio-label">
             <input
+              className='lavender-radio'
               type="radio"
               value="Dead"
               checked={marriageStatus === 'Dead'}
@@ -98,6 +147,7 @@ const RegistrationPage = () => {
           <p className='p1'>In Custody?</p>
           <label className="radio-label">
             <input
+            className='lavender-radio'
               type="radio"
               value="Yes"
               checked={inCustody === 'Yes'}
@@ -107,6 +157,7 @@ const RegistrationPage = () => {
           </label>
           <label className="radio-label">
             <input
+            className='lavender-radio'
               type="radio"
               value="No"
               checked={inCustody === 'No'}
@@ -120,6 +171,7 @@ const RegistrationPage = () => {
           <p className='p1'>Crime Justified?</p>
           <label className="radio-label">
             <input
+            className='lavender-radio '
               type="radio"
               value="Yes"
               checked={crimeJustified === 'Yes'}
@@ -129,6 +181,7 @@ const RegistrationPage = () => {
           </label>
           <label className="radio-label">
             <input
+            className='lavender-radio'
               type="radio"
               value="No"
               checked={crimeJustified === 'No'}
@@ -238,12 +291,97 @@ const RegistrationPage = () => {
         )}
 
         
+      </div>
+    <div className="add-to-crimes-section">Add to crimes
+      <div className="search-bar">
+          <input type="text" placeholder="Search" />
+          <button className="search-button"  >
+             <img src="./assets/images/loupe.png" alt="Search" width='30px' height='30px' />
+          </button>
+     </div>
+    </div>
+    <div className="action-buttons">
+       <button className="remove-button" onClick={handleRemoveSelectedRows}>
+          <div className="icon-circle">
+             <span>-</span>
+          </div>
+          Remove from list
+       </button>
+       <button className="add-button" onClick={toggleAddForm}>
+          <div className="icon-circle">
+             <span>+</span>
+          </div>
+          Add to crime list
+        </button>
+       <button className="view-button">
+           <div className="icon-circle">
+              <span>!</span>
+           </div>
+           View details
+       </button>
+    </div>
 
-        <button onClick={handleRegistration} className="btn">
+    {isAddFormVisible && (
+        <div className="data-table">
+          <div className="data-table-controls">
+            <label>Crime ID:</label>
+            <input
+              type="text"
+              placeholder="Enter Crime ID"
+              value={crimeID}
+              onChange={(e) => setCrimeID(e.target.value)}
+              onKeyPress={handleEnterKey} // Listen for Enter key press
+            />
+            <label>Description:</label>
+            <input
+              type="text"
+              placeholder="Enter Description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              onKeyPress={handleEnterKey} // Listen for Enter key press
+            />
+           
+          </div>
+        </div>
+      )}
+
+      <table className='data-table1'>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Crime ID</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {dataList.map((item) => (
+            <tr
+            
+            key={item.id}
+              className={selectedRows.includes(item.id) ? 'selected' : ''}
+              onClick={() => toggleRowSelection(item.id)}
+            >
+              <td>
+                <input
+                  type="checkbox"
+                  checked={selectedRows.includes(item.id)}
+                  onChange={() => toggleRowSelection(item.id)}
+                />
+              </td>
+              <td>{item.crimeID}</td>
+              <td>{item.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+  
+
+      <div className='fbtn'><button onClick={handleRegistration} className="btn">
           Update
         </button>
-      </div>
     </div>
+   </div>
   );
 };
 
