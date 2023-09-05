@@ -345,7 +345,8 @@ const RegistrationPage = () => {
         </div>
       )}
 
-      <table className='data-table1'>
+     
+      <table className='data-table1 '>
         <thead>
           <tr>
             <th></th>

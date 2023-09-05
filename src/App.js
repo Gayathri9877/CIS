@@ -13,7 +13,8 @@ import UserPersona from './Components/UserPersona/UserPersona';
 import FullUserPersona  from './Pages/fullUserPersona';
 import RadioButtonfull from './Components/RadioButtonfull/RadioButtonfull';
 import Suspect from './Pages/Suspect';
-
+import RegisterCrime from './Components/RegisterCrime/RegisterCrime';
+import Registercrimefull from './Pages/Registercrimefull';
          
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
           <Route path='/FullUserPersona' element={<FullUserPersona/>}/>
           <Route path='/RadioButtonfull' element={<RadioButtonfull/>}/>
           <Route path='/Suspect' element={<Suspect/>}/>
+          <Route path='/RegisterCrime' element={<RegisterCrime/>}/>
+          <Route path='/Registercrimefull'element={<Registercrimefull/>}/>
           
 
         </Routes>
