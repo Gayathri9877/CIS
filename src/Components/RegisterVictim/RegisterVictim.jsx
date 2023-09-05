@@ -1,18 +1,19 @@
 import React, { useState, useRef  } from 'react';
-import './RegisterCrime.css'; // Include your custom CSS for styling
+import './RegisterVictim.css'; // Include your custom CSS for styling
 
-const RegisterCrimePage = () => {
+const RegisterVictimPage = () => {
   const [crimeID, setCrimeID] = useState('');
-  const [crimeType, setCrimeType] = useState('');
-  const [date, setDate] = useState('');
-  const [time, setTime] = useState('');
+  const [lifeStatus, setLifeStatus] = useState('');
+  const [nic, setNIC] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [telephoneNo, setTelephoneNo] = useState('');
   const [province, setProvince] = useState('');
-  const [district, setDistrict] = useState('');
   const [city, setCity] = useState('');
   const [area, setArea] = useState('');
   const [address, setAddress] = useState('');
   const [landMark, setLandMark] = useState('');
-  const [testinomials, setTestinomials] = useState('');
+  const [additionalDescription, setAdditionalDescription] = useState('');
   const [photos, setPhotos] = useState([]); // Manage the previewed photos
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null);
 
@@ -46,20 +47,25 @@ const RegisterCrimePage = () => {
     setSelectedPhotoIndex(index);
   };
 
+  const handleLifeStatusChange = (event) => {
+    setLifeStatus(event.target.value);
+  };
+
   const handleRegistration = () => {
     // Handle the form submission here
     console.log('Registration submitted:', {
       crimeID,
-      crimeType,
-      date,
-      time,
+      lifeStatus,
+      nic,
+      firstName,
+      lastName,
+      telephoneNo,
       province,
-      district,
       city,
       area,
       address,
       landMark,
-      testinomials,
+      additionalDescription,
       photos: photos.map((photo) => photo.name),
       // ... other field values
     });
@@ -69,7 +75,7 @@ const RegisterCrimePage = () => {
 
   return (
     <div className="registration-container">
-      <h3>Register Crime</h3>
+      <h3>Register Victim</h3>
       <div className="registration-form">
         <div className="input-container">
           <label htmlFor="crimeID" className='p1'>Crime ID</label>
@@ -80,31 +86,63 @@ const RegisterCrimePage = () => {
             onChange={(e) => setCrimeID(e.target.value)}
           />
         </div>
+        <div className="radio-group">
+          <p className='p1'>Life Status</p>
+          <label className="radio-label">
+            <input
+              className="lavender-radio"
+              type="radio"
+              value="Alive"
+              checked={lifeStatus === 'Alive'}
+              onChange={handleLifeStatusChange}
+            />
+            <p className='ale'>Alive</p>
+          </label>
+          <label className="radio-label">
+            <input
+              className='lavender-radio'
+              type="radio"
+              value="Dead"
+              checked={lifeStatus === 'Dead'}
+              onChange={handleLifeStatusChange}
+            />
+            <p className='ale'>Dead</p>
+          </label>
+        </div>
         <div className="input-container">
-          <label htmlFor="crimeType" className='p1'>Crime Type</label>
+          <label htmlFor="nic" className='p1'>NIC</label>
           <input
             type="text"
-            id="crimeType"
-            value={crimeType}
-            onChange={(e) => setCrimeType(e.target.value)}
+            id="nic"
+            value={nic}
+            onChange={(e) => setNIC(e.target.value)}
           />
         </div>
         <div className="input-container">
-          <label htmlFor="date" className='p1'>Date</label>
+          <label htmlFor="firstName" className='p1'>First Name</label>
           <input
             type="text"
-            id="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
+            id="firstName"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
           />
         </div>
         <div className="input-container">
-          <label htmlFor="time" className='p1'>Time</label>
+          <label htmlFor="lastName" className='p1'>Last Name</label>
           <input
             type="text"
-            id="time"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
+            id="lastName"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+        </div>
+        <div className="input-container">
+          <label htmlFor="telephoneNo" className='p1'>Telephone No</label>
+          <input
+            type="text"
+            id="telephoneNo"
+            value={telephoneNo}
+            onChange={(e) => setTelephoneNo(e.target.value)}
           />
         </div>
         <div className="input-container">
@@ -114,15 +152,6 @@ const RegisterCrimePage = () => {
             id="province"
             value={province}
             onChange={(e) => setProvince(e.target.value)}
-          />
-        </div>
-        <div className="input-container">
-          <label htmlFor="district" className='p1'>District</label>
-          <input
-            type="text"
-            id="district"
-            value={district}
-            onChange={(e) => setDistrict(e.target.value)}
           />
         </div>
         <div className="input-container">
@@ -163,29 +192,30 @@ const RegisterCrimePage = () => {
           />
         </div>
         <div className="input-container">
-          <label htmlFor="testinomials" className='p1'>Testinomials(about the crime | optional)</label>
+          <label htmlFor="additionalDescription" className='p1'>Additional Description(about the Victim| optional)</label>
           <input
             type="text-area"
-            id="testinomials"
-            value={testinomials}
-            onChange={(e) => setTestinomials(e.target.value)}
+            id="additionalDescription"
+            value={additionalDescription}
+            onChange={(e) => setAdditionalDescription(e.target.value)}
             className="large-input"
           />
         </div>
         <div className="input-container">
           <label htmlFor="photo" className="p1">
-            Photos of the crime
+            Photos of Victim
           </label>
           <input
-          type="file"
-          id="photo"
-          accept="image/*"
-          multiple
-          onChange={handlePhotoChange}
-          className="photo-input"
-          ref={fileInputRef} // Attach the ref to the file input element
-          style={{ display: 'none' }} // Hide the file input element
-        />
+            type="file"
+            id="photo"
+            accept="image/*"
+            multiple
+            onChange={handlePhotoChange}
+            className="photo-input"
+            ref={fileInputRef} // Attach the ref to the file input element
+            style={{ display: 'none' }} // Hide the file input element
+          />
+          
         
         </div>
         <div className="photo-preview">
@@ -215,11 +245,11 @@ const RegisterCrimePage = () => {
         </div>
         
         <button onClick={handleRegistration} className="btn" >
-          Register Crime
+          Register 
         </button>
       </div>
     </div>
   );
 };
 
-export default RegisterCrimePage;
+export default RegisterVictimPage;

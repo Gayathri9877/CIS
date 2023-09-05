@@ -15,6 +15,10 @@ import RadioButtonfull from './Components/RadioButtonfull/RadioButtonfull';
 import Suspect from './Pages/Suspect';
 import RegisterCrime from './Components/RegisterCrime/RegisterCrime';
 import Registercrimefull from './Pages/Registercrimefull';
+import RegisterVictimPage from './Components/RegisterVictim/RegisterVictim';
+import RegisterVictimfull  from './Pages/RegisterVictimfull';
+import RegisterEvidence from './Components/RegisterEvidence/RegisterEvidence';
+import RegisterEvidencefull from './Pages/RegisterEvidencefull';
          
 
 function App() {
@@ -37,6 +41,11 @@ function App() {
           <Route path='/Suspect' element={<Suspect/>}/>
           <Route path='/RegisterCrime' element={<RegisterCrime/>}/>
           <Route path='/Registercrimefull'element={<Registercrimefull/>}/>
+          <Route path='/RegisterVictimPage' element={<RegisterVictimPage />} />
+          <Route path='/RegisterVictimfull' element={<RegisterVictimfull/>}/>
+          <Route path='/RegisterEvidence' element={<RegisterEvidence/>}/>
+          <Route path='/RegisterEvidencefull' element={<RegisterEvidencefull/>}/>
+
           
 
         </Routes>
