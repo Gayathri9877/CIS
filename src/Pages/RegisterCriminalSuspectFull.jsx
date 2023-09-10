@@ -1,15 +1,15 @@
 import React from 'react';
 import Navigation from '../Components/Navigation/Navigation';
-import RegisterVictimPage from '../Components/RegisterVictim/RegisterVictim';
+import RegisterCriminalSuspect from '../Components/RegisterCriminalSuspect/RegisterCriminalSuspect';
 import Footer from '../Components/Footer/footer';
 
 
-export default function RegisterVictimfull() {
+export default function RegisterCriminalSuspectFull() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navigation/>
-      <div >
-        <RegisterVictimPage/>
+      <div style={{ flex: 1 }}>
+        <RegisterCriminalSuspect/>
       </div>
       <div>
         <Footer/>

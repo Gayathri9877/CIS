@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import './RadioButtonfull.css';
+import React, { useState, useRef  } from 'react';
+import './RegisterCriminalSuspect.css';
 
-const RegistrationPage = () => {
+const RegisterCriminalSuspect = () => {
   const [crimeID, setCrimeID] = useState('');
-  const [marriageStatus, setMarriageStatus] = useState('');
+  const [lifeStatus, setLifeStatus] = useState('');
   const [inCustody, setInCustody] = useState('');
   const [crimeJustified, setCrimeJustified] = useState('');
   const [nicNumber, setNicNumber] = useState('');
@@ -20,6 +20,10 @@ const RegistrationPage = () => {
   const [dataList, setDataList] = useState([]);
   const [isAddFormVisible, setIsAddFormVisible] = useState(false);
   const [selectedRows, setSelectedRows] = useState([]);
+  const [criminalPhotos, setCriminalPhotos] = useState([]);
+  const [selectedCriminalPhotoIndex, setSelectedCriminalPhotoIndex] = useState(null);
+  const fileInputRef = useRef(null);
+
 
   const toggleAddForm = () => {
     setIsAddFormVisible(!isAddFormVisible);
@@ -32,7 +36,6 @@ const RegistrationPage = () => {
       setSelectedRows([...selectedRows, id]);
     }
   };
- 
   
 
  
@@ -41,7 +44,7 @@ const RegistrationPage = () => {
     // Handle the form submission here
     console.log('Registration submitted:', {
       crimeID,
-      marriageStatus,
+      lifeStatus,
       inCustody,
       crimeJustified,
       nicNumber,
@@ -58,16 +61,34 @@ const RegistrationPage = () => {
       // ... other field values
     });
   };
-
-
-  
-  const handlePhotoChange = (event) => {
-    const selectedPhoto = event.target.files[0];
-    setPhoto(selectedPhoto);
+ 
+ 
+  const handleCriminalPhotoChange = (event) => {
+    const selectedPhotos = event.target.files;
+    setCriminalPhotos([...criminalPhotos, ...selectedPhotos]);
   };
 
-  const handleMarriageStatusChange = (event) => {
-    setMarriageStatus(event.target.value);
+  const handleRemoveCriminalPhoto = () => {
+    if (selectedCriminalPhotoIndex !== null) {
+      const updatedPhotos = [...criminalPhotos];
+      updatedPhotos.splice(selectedCriminalPhotoIndex, 1);
+      setCriminalPhotos(updatedPhotos);
+      setSelectedCriminalPhotoIndex(null);
+    }
+  };
+
+
+  const handleAddMoreCriminalPhotosClick = () => {
+    // Use the click() method of the file input element to open the file dialog
+    fileInputRef.current.click();
+  };
+
+  const handleCriminalPhotoClick = (index) => {
+    setSelectedCriminalPhotoIndex(index);
+  };
+
+  const handleLifeStatusChange = (event) => {
+    setLifeStatus(event.target.value);
   };
 
   const handleInCustodyChange = (event) => {
@@ -99,7 +120,6 @@ const RegistrationPage = () => {
     setSelectedRows([]);
   };
 
-   // Listen for Enter key press to add data
    const handleEnterKey = (event) => {
     if (event.key === 'Enter') {
       handleAddData();
@@ -108,7 +128,7 @@ const RegistrationPage = () => {
 
   return (
     <div className="registration-container">
-      <h3>Update Criminal/Suspect Details</h3>
+      <h3>Register Criminal/Suspect Details</h3>
       <div className="registration-form">
         <div className="input-container">
           <label htmlFor="crimeID" className='p1'>Crime ID</label>
@@ -119,15 +139,18 @@ const RegistrationPage = () => {
             onChange={(e) => setCrimeID(e.target.value)}
           />
         </div>
-        <div className="radio-group">
-          <p className='p1'>Marriage Status</p>
+
+        
+
+        {<div className="radio-group">
+          <p className='p1'>Life Status</p>
           <label className="radio-label">
             <input
               className="lavender-radio"
               type="radio"
               value="Alive"
-              checked={marriageStatus === 'Alive'}
-              onChange={handleMarriageStatusChange}
+              checked={lifeStatus === 'Alive'}
+              onChange={handleLifeStatusChange}
             />
             <p className='ale'>Alive</p>
           </label>
@@ -136,12 +159,12 @@ const RegistrationPage = () => {
               className='lavender-radio'
               type="radio"
               value="Dead"
-              checked={marriageStatus === 'Dead'}
-              onChange={handleMarriageStatusChange}
+              checked={lifeStatus === 'Dead'}
+              onChange={handleLifeStatusChange}
             />
             <p className='ale'>Dead</p>
           </label>
-        </div>
+        </div> }
 
         <div className="radio-group">
           <p className='p1'>In Custody?</p>
@@ -190,6 +213,7 @@ const RegistrationPage = () => {
             <p className='ale'>No</p>
           </label>
         </div>
+
         <div className="input-container">
           <label htmlFor="nicNumber" className='p1'>NIC Number</label>
           <input
@@ -271,24 +295,59 @@ const RegistrationPage = () => {
             onChange={(e) => setBranch(e.target.value)}
           />
         </div>
+       
         <div className="input-container">
-          <label htmlFor="photo" className="p1">
-            Photo of the Criminal
-          </label>
-          <input
-            type="file"
-            id="photo"
-            accept="image/*"
-            onChange={handlePhotoChange}
-            className="photo-input"
-          />
-        </div>
-        {photo && (
-          <div className="photo-preview">
-            <h6>--- Uploaded Photo ---</h6>
-            <img src={URL.createObjectURL(photo)} alt="Uploaded Criminal" />
-          </div>
-        )}
+        <label htmlFor="crminalphoto" className="p1">
+          Photos of the Criminal
+        </label>
+        <input
+          type="file"
+          id="crminalphoto"
+          accept="image/*"
+          multiple
+          onChange={handleCriminalPhotoChange}
+          className="photo-input"
+          ref={fileInputRef}
+          style={{ display: 'none' }}
+        />
+      </div>
+      <div className="photo-preview">
+  {/* Render the first uploaded photo separately */}
+  {criminalPhotos.length > 0 && (
+    <div
+      className={`photo-cell ${selectedCriminalPhotoIndex === 0 ? 'selected' : ''}`}
+      onClick={() => handleCriminalPhotoClick(0)}
+    >
+      <img src={URL.createObjectURL(criminalPhotos[0])} alt={`Criminal 0`} />
+    </div>
+  )}
+
+  {/* Render the rest of the photos */}
+  {criminalPhotos.slice(1).map((photo, index) => (
+    <div
+      key={index}
+      className={`photo-cell ${selectedCriminalPhotoIndex === index + 1 ? 'selected' : ''}`}
+      onClick={() => handleCriminalPhotoClick(index + 1)}
+    >
+      <img src={URL.createObjectURL(photo)} alt={`Criminal ${index}`} />
+    </div>
+  ))}
+
+  <div className="action-buttons">
+    <button className="remove-button" onClick={handleRemoveCriminalPhoto}>
+      <div className="icon-circle">
+        <span>-</span>
+      </div>
+      Remove this Photo
+    </button>
+    <button className="add-button" onClick={handleAddMoreCriminalPhotosClick}>
+      <div className="icon-circle">
+        <span>+</span>
+      </div>
+      Add more Photos
+    </button>
+  </div>
+</div>
 
         
       </div>
@@ -330,7 +389,7 @@ const RegistrationPage = () => {
               placeholder="Enter Crime ID"
               value={crimeID}
               onChange={(e) => setCrimeID(e.target.value)}
-              onKeyPress={handleEnterKey} // Listen for Enter key press
+              onKeyPress={handleEnterKey} 
             />
             <label>Description:</label>
             <input
@@ -338,7 +397,7 @@ const RegistrationPage = () => {
               placeholder="Enter Description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              onKeyPress={handleEnterKey} // Listen for Enter key press
+              onKeyPress={handleEnterKey} 
             />
            
           </div>
@@ -383,8 +442,10 @@ const RegistrationPage = () => {
         </button>
     </div>
    </div>
+  
   );
+
+
 };
 
-export default RegistrationPage;
-
+export default RegisterCriminalSuspect;

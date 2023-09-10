@@ -1,7 +1,7 @@
 import React, { useState, useRef  } from 'react';
 import './RegisterVictim.css'; // Include your custom CSS for styling
 
-const RegisterVictimPage = () => {
+const RegisterVictim= () => {
   const [crimeID, setCrimeID] = useState('');
   const [lifeStatus, setLifeStatus] = useState('');
   const [nic, setNIC] = useState('');
@@ -252,4 +252,4 @@ const RegisterVictimPage = () => {
   );
 };
 
-export default RegisterVictimPage;
+export default RegisterVictim;

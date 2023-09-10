@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation2 from '../Components/Navigationbar2/Navigation2';
-import RadioButtonfull from '../Components/RadioButtonfull/RadioButtonfull';
+import RadioButtonfull from '../Components/UpdateCriminalSuspect/UpdateCriminalSuspect';
 import Footer from '../Components/Footer/footer';
 
 

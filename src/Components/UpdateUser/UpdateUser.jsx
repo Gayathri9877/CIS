@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './UpdateUser.css'; // Include your custom CSS for styling
+import './UpdateUser.css'; 
 
-const RegistrationPage = () => {
+const UpdateUser = () => {
   const [registrationNumber, setRegistrationNumber] = useState('');
   const [nicNumber, setNicNumber] = useState('');
   const [firstName, setFirstName] = useState('');
@@ -169,4 +169,4 @@ const RegistrationPage = () => {
   );
 };
 
-export default RegistrationPage;
+export default UpdateUser;

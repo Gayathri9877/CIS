@@ -2,7 +2,7 @@ import React from 'react';
 import { FaFacebook, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import './UserPersona.css';
 
-const UserPersonaPage = () => {
+const UserPersona = () => {
   return (
     <div className="persona-container">
       <div className="picture-section">
@@ -60,5 +60,5 @@ const UserPersonaPage = () => {
   );
 };
 
-export default UserPersonaPage;
+export default UserPersona;
 

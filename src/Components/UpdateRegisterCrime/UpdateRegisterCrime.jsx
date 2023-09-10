@@ -1,7 +1,7 @@
 import React, { useState, useRef  } from 'react';
-import './RegisterCrime.css'; // Include your custom CSS for styling
+import './UpdateRegisterCrime.css'; // Include your custom CSS for styling
 
-const RegisterCrime = () => {
+const UpdateRegisterCrime = () => {
   const [crimeID, setCrimeID] = useState('');
   const [crimeType, setCrimeType] = useState('');
   const [date, setDate] = useState('');
@@ -12,8 +12,8 @@ const RegisterCrime = () => {
   const [area, setArea] = useState('');
   const [address, setAddress] = useState('');
   const [landMark, setLandMark] = useState('');
-  const [testinomials, setTestinomials] = useState('');
-  const [photos, setPhotos] = useState([]); // Manage the previewed photos
+  const [additionaldescription, setAdditionalDescription] = useState('');
+  const [photos, setPhotos] = useState([]);
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null);
 
   const fileInputRef = useRef(null);
@@ -59,7 +59,7 @@ const RegisterCrime = () => {
       area,
       address,
       landMark,
-      testinomials,
+      additionaldescription,
       photos: photos.map((photo) => photo.name),
       // ... other field values
     });
@@ -69,7 +69,7 @@ const RegisterCrime = () => {
 
   return (
     <div className="registration-container">
-      <h3>Register Crime</h3>
+      <h3>Update Crime</h3>
       <div className="registration-form">
         <div className="input-container">
           <label htmlFor="crimeID" className='p1'>Crime ID</label>
@@ -163,12 +163,12 @@ const RegisterCrime = () => {
           />
         </div>
         <div className="input-container">
-          <label htmlFor="testinomials" className='p1'>Testinomials(about the crime | optional)</label>
+          <label htmlFor="additionaldescription" className='p1'>Additional Description(about the crime | optional)</label>
           <input
             type="text-area"
-            id="testinomials"
-            value={testinomials}
-            onChange={(e) => setTestinomials(e.target.value)}
+            id="additionaldescription"
+            value={additionaldescription}
+            onChange={(e) => setAdditionalDescription(e.target.value)}
             className="large-input"
           />
         </div>
@@ -215,11 +215,11 @@ const RegisterCrime = () => {
         </div>
         
         <button onClick={handleRegistration} className="btn" >
-          Register Crime
+          Update
         </button>
       </div>
     </div>
   );
 };
 
-export default RegisterCrime;
+export default UpdateRegisterCrime;

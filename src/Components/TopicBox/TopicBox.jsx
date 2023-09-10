@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsFillArrowRightSquareFill } from 'react-icons/bs';
-import './topicbox.css'
-import { Alert } from 'bootstrap';
+import './TopicBox.css'
+
 
 export default function TopicBox() {
   return (
