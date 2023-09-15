@@ -3,6 +3,11 @@ import './footer.css';
 
 
 const Footer = () => {
+  // Define the openSocialLink function
+  const openSocialLink = (url) => {
+    window.open(url, '_blank'); // Opens the URL in a new tab
+  };
+
   return (
     <footer className="footer ">
       <div className="column">
@@ -34,43 +39,42 @@ const Footer = () => {
         <div className="subpart">0711234567</div>
       </div>
       <div className="column">
-      <div className="column">
-  <div className="title">Social Media</div>
-  <div className="social-link">
-    <div className="social-icon">
-      <img src='assets\images\facebook.png' alt='Facebook' className='social-img' />
-      <span>@sl_policemedia</span>
-    </div>
-  </div>
-  <div className="social-link">
-    <div className="social-icon">
-      <img src='assets\images\instagram.png' alt='Instagram' className='social-img' />
-      <span>@sl_policemedia</span>
-    </div>
-  </div>
-  <div className="social-link">
-    <div className="social-icon">
-      <img src='assets\images\tiktok.png' alt='TikTok' className='social-img' />
-      <span>@sl_policemedia</span>
-    </div>
-  </div>
-  <div className="social-link">
-    <div className="social-icon">
-      <img src='assets\images\twitter.png' alt='Twitter' className='social-img' />
-      <span>@sl_policemedia</span>
-    </div>
-  </div>
-  <div className="social-link">
-    <div className="social-icon">
-      <img src='assets\images\youtube.png' alt='YouTube' className='social-img' />
-      <span>@sl_policemedia</span>
-    </div>
-  </div>
-</div>
-</div>
+        <div className="title">Social Media</div>
+
+        <div className="social-links">
+          {/* Facebook */}
+          <div className="social-link" onClick={() => openSocialLink('https://www.facebook.com/sl_policemedia')}>
+            <img src='assets\images\facebook.png' alt='Facebook' className='social-img' />
+            <span className="social-link-text">Facebook</span>
+          </div>
+
+          {/* Instagram */}
+          <div className="social-link" onClick={() => openSocialLink('https://www.instagram.com/sl_policemedia')}>
+            <img src='assets\images\instagram.png' alt='Instagram' className='social-img' />
+            <span className="social-link-text">Instagram</span>
+          </div>
+
+          {/* TikTok */}
+          <div className="social-link" onClick={() => openSocialLink('https://www.tiktok.com/sl_policemedia')}>
+            <img src='assets\images\tiktok.png' alt='TikTok' className='social-img' />
+            <span className="social-link-text">TikTok</span>
+          </div>
+
+          {/* Twitter */}
+          <div className="social-link" onClick={() => openSocialLink('https://www.twitter.com/sl_policemedia')}>
+            <img src='assets\images\twitter.png' alt='Twitter' className='social-img' />
+            <span className="social-link-text">Twitter</span>
+          </div>
+
+          {/* YouTube */}
+          <div className="social-link" onClick={() => openSocialLink('https://www.youtube.com/sl_policemedia')}>
+            <img src='assets\images\youtube.png' alt='YouTube' className='social-img' />
+            <span className="social-link-text">YouTube</span>
+          </div>
+        </div>
+      </div>
   
     </footer>
   );
 };
-
 export default Footer;

@@ -64,3 +64,6 @@ input:focus {
 .p1{
   color: black;
 }
+.footer {
+  flex: 0; 
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navigation2.css'; 
+import { NavLink } from 'react-router-dom';
 
 
 const NavigationBar = () => {
@@ -11,11 +12,11 @@ const NavigationBar = () => {
       </div>
       <div className="navbar-center mt-2" >
         <ul className="navbar-links ">
-          <li><a href="#">New registration</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Create</a></li>
-          <li><a href="#">Update</a></li>
-          <li><a href="#">Support</a></li>
+        <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/FullUserdetails">New Registration</NavLink></li>
+          <li><NavLink to="/UpdateUserDetails">Update</NavLink></li>
+          <li><NavLink to="">Support</NavLink></li>
+         
         </ul>
       </div>
       <div className="navbar-right" style={{ marginRight: '20px' }}>
