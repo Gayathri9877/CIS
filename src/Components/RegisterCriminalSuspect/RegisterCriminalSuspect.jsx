@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './RegisterCriminalSuspect.css';
 
 const RegistrationPage = () => {
@@ -14,7 +14,11 @@ const RegistrationPage = () => {
   const [city, setCity] = useState('');
   const [area, setArea] = useState('');
   const [address, setAddress] = useState('');
-  const [branch, setBranch] = useState('');
+  const [landMark, setLandMark] = useState('');
+  const [victimPhotos, setVictimPhotos] = useState([]);
+
+
+
   const [photo, setPhoto] = useState(null);
   const [description, setDescription] = useState('');
   const [dataList, setDataList] = useState([]);
@@ -38,7 +42,7 @@ const RegistrationPage = () => {
  
 
   const handleRegistration = () => {
-    // Handle the form submission here
+   
     console.log('Registration submitted:', {
       crimeID,
       lifeStatus,
@@ -52,15 +56,16 @@ const RegistrationPage = () => {
       city,
       area,
       address,
-      branch,
+      landMark,
       photo: photo ? photo.name : null,
     
-      // ... other field values
     });
   };
 
+  const selectedVictimPhotoIndex = useState(null)[0];
+  const setSelectedVictimPhotoIndex = useState(null)[1];
+  const fileInputRef = useRef(null); 
 
-  
   const handlePhotoChange = (event) => {
     const selectedPhoto = event.target.files[0];
     setPhoto(selectedPhoto);
@@ -77,6 +82,34 @@ const RegistrationPage = () => {
   const handleCrimeJustifiedChange = (event) => {
     setCrimeJustified(event.target.value);
   };
+
+  const handleVictimPhotoChange = (event) => {
+    const selectedPhotos = event.target.files;
+    setVictimPhotos([...victimPhotos, ...selectedPhotos]);
+  };
+
+  const handleRemoveVictimPhoto = () => {
+    if (selectedVictimPhotoIndex !== null) {
+      const updatedPhotos = [...victimPhotos];
+      updatedPhotos.splice(selectedVictimPhotoIndex, 1);
+      setVictimPhotos(updatedPhotos);
+      setSelectedVictimPhotoIndex(null);
+    }
+  };
+
+  const handleRemoveAllVictimPhotos = () => {
+    setVictimPhotos([]);
+    setSelectedVictimPhotoIndex(null);
+  };
+
+  const handleAddMoreVictimPhotosClick = () => {
+    fileInputRef.current.click();
+  };
+
+  const handleVictimPhotoClick = (index) => {
+    setSelectedVictimPhotoIndex(index);
+  };
+
 
   const handleAddData = () => {
     if (crimeID.trim() !== '' && description.trim() !== '') {
@@ -99,7 +132,7 @@ const RegistrationPage = () => {
     setSelectedRows([]);
   };
 
-   // Listen for Enter key press to add data
+   
    const handleEnterKey = (event) => {
     if (event.key === 'Enter') {
       handleAddData();
@@ -108,10 +141,10 @@ const RegistrationPage = () => {
 
   return (
     <div className="registration-container">
-      <h3>Update Criminal/Suspect Details</h3>
+      <h3>Register Criminal/Suspect Details</h3>
       <div className="registration-form">
         <div className="input-container">
-          <label htmlFor="crimeID" className='p1'>Crime ID</label>
+          <label htmlFor="crimeID" className='p1'>Criminal/Suspect ID</label>
           <input
             type="text"
             id="crimeID"
@@ -300,32 +333,61 @@ const RegistrationPage = () => {
           />
         </div>
         <div className="input-container">
-          <label htmlFor="branch" className='p1'>Branch</label>
+          <label htmlFor="landMark" className='p1'>Landmark(optional)</label>
           <input
             type="text"
-            id="branch"
-            value={branch}
-            onChange={(e) => setBranch(e.target.value)}
+            id="landMark"
+            value={landMark}
+            onChange={(e) => setLandMark(e.target.value)}
           />
         </div>
+
+
+
         <div className="input-container">
-          <label htmlFor="photo" className="p1">
-            Photo of the Criminal
+          <label htmlFor="victimPhotos" className="p1">
+            Photos of Criminal
           </label>
           <input
             type="file"
-            id="photo"
+            id="victimPhotos"
             accept="image/*"
-            onChange={handlePhotoChange}
+            multiple
+            onChange={handleVictimPhotoChange}
             className="photo-input"
+            ref={fileInputRef} 
+            style={{ display: 'none' }} 
           />
+          
+        
         </div>
-        {photo && (
-          <div className="photo-preview">
-            <h6>--- Uploaded Photo ---</h6>
-            <img src={URL.createObjectURL(photo)} alt="Uploaded Criminal" />
-          </div>
-        )}
+        <div className="photo-preview">
+        {victimPhotos.map((photo, index) => (
+          <div
+          key={index}
+          className={`photo-cell ${selectedVictimPhotoIndex === index ? 'selected' : ''}`}
+          onClick={() => handleVictimPhotoClick(index)}
+        >
+          <img src={URL.createObjectURL(photo)} alt={`Uploaded Victim Photo ${index}`} />
+        </div>
+        ))}
+      
+      <div className="action-buttons">
+          <button className="remove-button" onClick={handleRemoveVictimPhoto}>
+            <div className="icon-circle">
+              <span>-</span>
+            </div>
+            Remove this Photo
+          </button>
+          <button className="add-button" onClick={handleAddMoreVictimPhotosClick}>
+            <div className="icon-circle">
+              <span>+</span>
+            </div>
+            Add more Photos
+          </button>
+        </div></div>
+
+
 
         
       </div>
@@ -367,7 +429,7 @@ const RegistrationPage = () => {
               placeholder="Enter Crime ID"
               value={crimeID}
               onChange={(e) => setCrimeID(e.target.value)}
-              onKeyPress={handleEnterKey} // Listen for Enter key press
+              onKeyPress={handleEnterKey} 
             />
             <label>Description:</label>
             <input
@@ -375,7 +437,7 @@ const RegistrationPage = () => {
               placeholder="Enter Description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              onKeyPress={handleEnterKey} // Listen for Enter key press
+              onKeyPress={handleEnterKey} 
             />
            
           </div>
@@ -416,7 +478,7 @@ const RegistrationPage = () => {
   
 
       <div className='fbtn'><button onClick={handleRegistration} className="btn">
-          Update
+          Register
         </button>
     </div>
    </div>

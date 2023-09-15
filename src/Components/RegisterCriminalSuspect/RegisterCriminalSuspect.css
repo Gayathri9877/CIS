@@ -327,3 +327,21 @@
     /* .lavender-radio{
         width: 10px !important;
     } */
+
+    .crime-photo {
+        width: 200px; 
+        height: 200px; 
+      }
+
+      .center-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .photo-input {
+        width: 100%; 
+        margin-top: 10px; 
+      }

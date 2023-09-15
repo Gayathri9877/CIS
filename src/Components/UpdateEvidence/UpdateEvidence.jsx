@@ -123,8 +123,8 @@ const RegisterEvidence = () => {
             multiple
             onChange={handleVictimPhotoChange}
             className="photo-input"
-            ref={fileInputRef} // Attach the ref to the file input element
-            style={{ display: 'none' }} // Hide the file input element
+            ref={fileInputRef} 
+            style={{ display: 'none' }} 
           />
           
         
