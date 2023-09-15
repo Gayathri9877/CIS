@@ -16,9 +16,9 @@ const RegistrationPage = () => {
   const [address, setAddress] = useState('');
   const [landMark, setLandMark] = useState('');
   const [victimPhotos, setVictimPhotos] = useState([]);
-
-
-
+  const [selectedVictimPhotoIndex, setSelectedVictimPhotoIndex] = useState(null);
+;
+  const fileInputRef = useRef(null); 
   const [photo, setPhoto] = useState(null);
   const [description, setDescription] = useState('');
   const [dataList, setDataList] = useState([]);
@@ -58,13 +58,12 @@ const RegistrationPage = () => {
       address,
       landMark,
       photo: photo ? photo.name : null,
+      victimPhotos: victimPhotos.map((photo) => photo.name),
+      
     
     });
   };
 
-  const selectedVictimPhotoIndex = useState(null)[0];
-  const setSelectedVictimPhotoIndex = useState(null)[1];
-  const fileInputRef = useRef(null); 
 
   const handlePhotoChange = (event) => {
     const selectedPhoto = event.target.files[0];
@@ -95,11 +94,6 @@ const RegistrationPage = () => {
       setVictimPhotos(updatedPhotos);
       setSelectedVictimPhotoIndex(null);
     }
-  };
-
-  const handleRemoveAllVictimPhotos = () => {
-    setVictimPhotos([]);
-    setSelectedVictimPhotoIndex(null);
   };
 
   const handleAddMoreVictimPhotosClick = () => {
@@ -344,49 +338,49 @@ const RegistrationPage = () => {
 
 
 
-        <div className="input-container">
-          <label htmlFor="victimPhotos" className="p1">
-            Photos of Criminal
-          </label>
-          <input
-            type="file"
-            id="victimPhotos"
-            accept="image/*"
-            multiple
-            onChange={handleVictimPhotoChange}
-            className="photo-input"
-            ref={fileInputRef} 
-            style={{ display: 'none' }} 
-          />
-          
-        
-        </div>
-        <div className="photo-preview">
-        {victimPhotos.map((photo, index) => (
-          <div
-          key={index}
-          className={`photo-cell ${selectedVictimPhotoIndex === index ? 'selected' : ''}`}
-          onClick={() => handleVictimPhotoClick(index)}
-        >
-          <img src={URL.createObjectURL(photo)} alt={`Uploaded Victim Photo ${index}`} />
-        </div>
-        ))}
-      
-      <div className="action-buttons">
-          <button className="remove-button" onClick={handleRemoveVictimPhoto}>
-            <div className="icon-circle">
-              <span>-</span>
-            </div>
-            Remove this Photo
-          </button>
-          <button className="add-button" onClick={handleAddMoreVictimPhotosClick}>
-            <div className="icon-circle">
-              <span>+</span>
-            </div>
-            Add more Photos
-          </button>
-        </div></div>
+    <div className="input-container">
+    <label htmlFor="victimPhotos" className="p1">
+      Photos of Criminal
+    </label>
+    <input
+      type="file"
+      id="victimPhotos"
+      accept="image/*"
+      multiple
+      onChange={handleVictimPhotoChange}
+      className="photo-input"
+      ref={fileInputRef}
+      style={{ display: 'none' }}
+    />
+  </div>
+  
+  <div className="photo-preview">
+    {victimPhotos.map((photo, index) => (
+      <div
+        key={index}
+        className={`photo-cell ${selectedVictimPhotoIndex === index ? 'selected' : ''}`}
+        onClick={() => handleVictimPhotoClick(index)}
+      >
+        <img src={URL.createObjectURL(photo)} alt={`Uploaded Victim Photo ${index}`} />
+      </div>
+    ))}
+  </div>
 
+  <div className="action-buttons">
+    <button className="add-button" onClick={handleAddMoreVictimPhotosClick}>
+      <div className="icon-circle">
+        <span>+</span>
+      </div>
+      Add more Photos
+    </button>
+    <button className="remove-button" onClick={handleRemoveVictimPhoto}>
+      <div className="icon-circle">
+        <span>-</span>
+      </div>
+      Remove this Photo
+    </button>
+  </div>
+  
 
 
         
