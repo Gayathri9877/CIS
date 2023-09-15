@@ -1,5 +1,5 @@
 import React, { useState, useRef  } from 'react';
-import './RegisterCrime.css'; // Include your custom CSS for styling
+import './RegisterCrime.css';
 
 const RegisterCrimePage = () => {
   const [crimeID, setCrimeID] = useState('');
@@ -13,7 +13,7 @@ const RegisterCrimePage = () => {
   const [address, setAddress] = useState('');
   const [landMark, setLandMark] = useState('');
   const [testinomials, setTestinomials] = useState('');
-  const [photos, setPhotos] = useState([]); // Manage the previewed photos
+  const [photos, setPhotos] = useState([]);
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(null);
 
   const fileInputRef = useRef(null);
@@ -37,7 +37,7 @@ const RegisterCrimePage = () => {
     setSelectedPhotoIndex(null);
   };
   const handleAddMorePhotosClick = () => {
-    // Use the click() method of the file input element to open the file dialog
+ 
     
     fileInputRef.current.click();
   };
@@ -47,7 +47,7 @@ const RegisterCrimePage = () => {
   };
 
   const handleRegistration = () => {
-    // Handle the form submission here
+ 
     console.log('Registration submitted:', {
       crimeID,
       crimeType,
@@ -61,7 +61,7 @@ const RegisterCrimePage = () => {
       landMark,
       testinomials,
       photos: photos.map((photo) => photo.name),
-      // ... other field values
+
     });
 
     
@@ -183,8 +183,8 @@ const RegisterCrimePage = () => {
           multiple
           onChange={handlePhotoChange}
           className="photo-input"
-          ref={fileInputRef} // Attach the ref to the file input element
-          style={{ display: 'none' }} // Hide the file input element
+          ref={fileInputRef}
+          style={{ display: 'none' }}
         />
         
         </div>

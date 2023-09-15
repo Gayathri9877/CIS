@@ -11,7 +11,7 @@
   align-items:center;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
-  border: 1px solid navy; /* Add a 2px solid navy blue border */
+  border: 1px solid navy; 
   box-sizing:content-box;
   background-image: url("/public/assets/images/darkback.webp");
 }
@@ -56,7 +56,7 @@
 .bio,
 .service {
   text-align: center;
-  width:auto;/* Equal width for bio and service */
+  width:auto;
   flex: 1;
   
   
@@ -83,7 +83,7 @@
 
 .navy-blue-part {
   width:100%;
-  background-color: #003366; /* Navy blue background */
+  background-color: #003366;
   border-radius: 0px 20px 20px 0px;
   
 }
@@ -116,10 +116,10 @@
 
 
 .info{
-  background-color: #f2f2f2; /* Set the background color for the box */
+  background-color: #f2f2f2;
   padding: 2px;
   border-radius: 5px;
-  margin-left: 1px; /* Add spacing between icon and box */
+  margin-left: 1px;
   border: 2px;
   border-color: #003366;
   display: flex;

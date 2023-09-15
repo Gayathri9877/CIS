@@ -6,7 +6,7 @@ const UserPersonaPage = () => {
   return (
     <div className="persona-container">
       <div className="picture-section">
-        {/* Placeholder user picture */}
+      
         <img src="./assets/images/officer2.jpg" alt="User" />
         
       </div>

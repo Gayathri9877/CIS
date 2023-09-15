@@ -1,6 +1,6 @@
 .body {
-    font-family: Arial, sans-serif; /* Change the font family as needed */
-    font-size: 16px; /* Change the font size as needed */
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
   }
 .registration-container {
     display: flex;
@@ -76,7 +76,7 @@
     align-items: flex-start;
     margin-bottom: 20px;
     margin-top: 1%;
-    gap: 70px; /* Adjust the gap between radio buttons and text boxes */
+    gap: 70px; 
         
       
     
@@ -95,50 +95,50 @@
     margin-left: 2px;
   }
   
-  /* Add this class to adjust spacing between buttons */
+  
   .radio-label + .radio-label {
-    margin-left: 5px; /* Adjust the spacing between radio buttons */
+    margin-left: 5px; 
     margin-right: 80%;
   }
   
-  /* Increase space between label and first button */
+
   .radio-group > p {
-    margin-right: 50px; /* Adjust the space between label and first button */
+    margin-right: 50px;
   }
   .inc{
     margin-right: 3%;
   }
-/* Change the color of the radio button outer circle */
+
   input[type="radio"] {
-    appearance: none; /* Hide the default radio button */
+    appearance: none; 
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 16px;
     height: 16px;
-    border: 1px solid lavender; /* Default outer circle color */
-    border-radius: 50%; /* Make it a circle */
+    border: 1px solid lavender; 
+    border-radius: 50%; 
     outline: none;
-    margin-right: 5px; /* Adjust spacing between radio button and label */
+    margin-right: 5px;
   }
   
-  /* Change the color of the inner radio button dot when selected */
+ 
   input[type="radio"]:checked {
     
-    border-color:navy; /* Change outer circle color when selected */
+    border-color:navy; 
     display: flex;
     align-items: center;
   }
   
-  /* Customize the inner dot appearance */
+  
   input[type="radio"]:checked::before {
-    /* Unicode character for a bullet point */
+    
     display: block;
     content:normal;
     width: 10px;
     height: 10px;
-    background-color:lavender; /* Color of the inner dot */
-    border-radius: 50%; /* Make it a circle */
-    margin: 2px; /* Position the inner dot within the outer circle */
+    background-color:lavender; 
+    border-radius: 50%;
+    margin: 2px;
   }
   
   .add-to-crimes-section {
@@ -201,15 +201,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px; /* Adjust the width and height as needed */
-    height: 20px; /* Adjust the width and height as needed */
+    width: 20px; 
+    height: 20px;
     border-radius: 50%;
-    background-color: inherit; /* Inherit the background color from the parent (the button) */
-    border: 2px solid white; /* White border with 3px width */
-    color: white; /* Text color */
-    font-weight: bold; /* Make the text bold */
-    font-size: 12px; /* Adjust the font size as needed */
-    margin-right: 2px; /* Add some spacing between the circle and text */
+    background-color: inherit;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 2px;
   }
   
   
@@ -222,7 +222,7 @@
     display: flex;
     flex-direction: row !important;
     align-items: center;
-    gap: 90px; /* Adjust the gap between buttons */
+    gap: 90px;
     margin-top: 20px; }
     
 
@@ -275,7 +275,7 @@
       display: flex;
       flex-direction: row !important;
       align-items: center;
-      gap: 95px; /* Adjust the gap between buttons */
+      gap: 95px;
       margin-top: 10px; 
       width: 45%;
       margin-bottom: 3%;
@@ -287,8 +287,8 @@
       border-radius: 10%;
     }
     .crime-photo {
-        width: 200px; /* Adjust the maximum width as needed */
-        height: 200px; /* Adjust the maximum height as needed */
+        width: 200px;
+        height: 200px; 
       }
 
       .center-input {
@@ -300,6 +300,6 @@
       }
       
       .photo-input {
-        width: 100%; /* Adjust the width as needed */
-        margin-top: 10px; /* Adjust the margin as needed */
+        width: 100%;
+        margin-top: 10px;
       }

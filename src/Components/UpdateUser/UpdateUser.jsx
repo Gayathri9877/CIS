@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './UpdateUser.css'; // Include your custom CSS for styling
+import './UpdateUser.css';
 
 const RegistrationPage = () => {
   const [registrationNumber, setRegistrationNumber] = useState('');
@@ -21,7 +21,7 @@ const RegistrationPage = () => {
   };
 
   const handleRegistration = () => {
-    // Handle the form submission here
+    
     console.log('Registration submitted:', {
       registrationNumber,
       nicNumber,
@@ -35,7 +35,7 @@ const RegistrationPage = () => {
       branch,
       joindate,
       photo: photo ? photo.name : null,
-      // ... other field values
+      
     });
   };
 

@@ -3,9 +3,9 @@ import './footer.css';
 
 
 const Footer = () => {
-  // Define the openSocialLink function
+ 
   const openSocialLink = (url) => {
-    window.open(url, '_blank'); // Opens the URL in a new tab
+    window.open(url, '_blank'); 
   };
 
   return (

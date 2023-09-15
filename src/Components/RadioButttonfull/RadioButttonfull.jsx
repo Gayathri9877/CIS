@@ -38,7 +38,7 @@ const RegistrationPage = () => {
  
 
   const handleRegistration = () => {
-    // Handle the form submission here
+    
     console.log('Registration submitted:', {
       crimeID,
       lifeStatus,
@@ -55,7 +55,7 @@ const RegistrationPage = () => {
       branch,
       photo: photo ? photo.name : null,
     
-      // ... other field values
+     
     });
   };
 
@@ -99,7 +99,7 @@ const RegistrationPage = () => {
     setSelectedRows([]);
   };
 
-   // Listen for Enter key press to add data
+   
    const handleEnterKey = (event) => {
     if (event.key === 'Enter') {
       handleAddData();
@@ -367,7 +367,7 @@ const RegistrationPage = () => {
               placeholder="Enter Crime ID"
               value={crimeID}
               onChange={(e) => setCrimeID(e.target.value)}
-              onKeyPress={handleEnterKey} // Listen for Enter key press
+              onKeyPress={handleEnterKey}
             />
             <label>Description:</label>
             <input
@@ -375,7 +375,7 @@ const RegistrationPage = () => {
               placeholder="Enter Description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              onKeyPress={handleEnterKey} // Listen for Enter key press
+              onKeyPress={handleEnterKey}
             />
            
           </div>

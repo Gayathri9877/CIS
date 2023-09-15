@@ -1,12 +1,12 @@
 import React, { useState, useRef  } from 'react';
-import './RegisterEvidence.css'; // Include your custom CSS for styling
+import './RegisterEvidence.css';
 
 const RegisterEvidence = () => {
   const [crimeID, setCrimeID] = useState('');
   const [evidenceID, setEvidenceID] = useState('');
   const [testimonial, setTestimonial] = useState('');
   const [crimePhoto, setCrimePhoto] = useState(null);
-  const [victimPhotos, setVictimPhotos] = useState([]); // Manage the previewed victim photos
+  const [victimPhotos, setVictimPhotos] = useState([]);
   const [selectedVictimPhotoIndex, setSelectedVictimPhotoIndex] = useState(null);
 
   const fileInputRef = useRef(null);
@@ -36,7 +36,7 @@ const RegisterEvidence = () => {
   };
 
   const handleAddMoreVictimPhotosClick = () => {
-    // Use the click() method of the file input element to open the file dialog
+
     fileInputRef.current.click();
   };
 
@@ -45,14 +45,14 @@ const RegisterEvidence = () => {
   };
 
   const handleRegistration = () => {
-    // Handle the form submission here
+  
     console.log('Registration submitted:', {
       crimeID,
       evidenceID,
       testimonial,
       crimePhoto: crimePhoto ? crimePhoto.name : null,
       victimPhotos: victimPhotos.map((photo) => photo.name),
-      // ... other field values
+    
     });
   };
 
@@ -123,8 +123,8 @@ const RegisterEvidence = () => {
             multiple
             onChange={handleVictimPhotoChange}
             className="photo-input"
-            ref={fileInputRef} // Attach the ref to the file input element
-            style={{ display: 'none' }} // Hide the file input element
+            ref={fileInputRef} 
+            style={{ display: 'none' }} 
           />
           
         

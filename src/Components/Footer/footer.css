@@ -1,4 +1,4 @@
-/* Footer styles */
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -10,7 +10,7 @@
   width: 100%;
   bottom: 0;
 
-  margin-top: auto; /* Pushes footer to the bottom of the middle content */
+  margin-top: auto; 
 }
   .text01{
     
@@ -48,7 +48,7 @@
   }
   
   .social-img {
-    width: 20px; /* Adjust the width to your desired size */
+    width: 20px; 
     height: 20px; 
     margin-right: 5px;
   }
@@ -58,9 +58,9 @@
   }
 
   .subpart{
-    font-size: 14px; /* Adjust the font size to your preference */
-    color: ash; /* Adjust the color as needed */
-    margin-left: 25px; /* Add some spacing at the bottom */
+    font-size: 14px; 
+    color: ash; 
+    margin-left: 25px;
   }
 
   .logo1{

@@ -1,6 +1,6 @@
 .body {
-    font-family: Arial, sans-serif; /* Change the font family as needed */
-    font-size: 16px; /* Change the font size as needed */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
   }
 .registration-container {
     display: flex;
@@ -83,8 +83,8 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    width: 100%; /* Make buttons take the full width of the container */
-    margin-top: 10px; /* Adjust margin as needed */
+    width: 100%; 
+    margin-top: 10px;
   }
   .remove-button{
     background-color: red;
@@ -100,15 +100,15 @@
     display: flex;
     justify-content: center;
     align-items: left;
-    width: 20px; /* Adjust the width and height as needed */
-    height: 20px; /* Adjust the width and height as needed */
+    width: 20px; 
+    height: 20px;
     border-radius: 50%;
-    background-color: inherit; /* Inherit the background color from the parent (the button) */
-    border: 2px solid white; /* White border with 3px width */
-    color: white; /* Text color */
-    font-weight: bold; /* Make the text bold */
-    font-size: 12px; /* Adjust the font size as needed */
-    margin-right: 5px; /* Add some spacing between the circle and text */
+    background-color: inherit;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: 5px;
   }
   
   
@@ -119,9 +119,9 @@
   
   .action-buttons {
     display: flex;
-    flex-direction: row; /* Display buttons in a row */
-    justify-content: flex-end; /* Move buttons to the right side */
-    gap: 140px; /* Adjust the gap between buttons */
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 140px;
     margin-top: 20px;
   }
   
@@ -133,29 +133,29 @@
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adjust the gap between photos */
-  flex-direction: row-reverse; /* Reverse the order of photos within the row */
+  gap: 10px;
+  flex-direction: row-reverse;
 }
 
 .photo-preview img {
   
-  width: 300px; /* Adjust the width to your desired size */
-  height: auto; /* Maintain the aspect ratio */
+  width: 300px;
+  height: auto;
   
 }
 .photo-preview .photo-cell.selected {
-    border: 2px solid #007bff; /* Add a border around the selected photo */
+    border: 2px solid #007bff;
     border-radius: 0%;
     background-color: white;
-    width: auto; /* Adjust the width to your desired size */
-    height: auto; /* Maintain the aspect ratio */
+    width: auto; 
+    height: auto;
   }
   .large-input {
-    width: 100%; /* Set the width to 100% to make it full-width */
-    height: 150px; /* Adjust the height as needed */
-    resize: vertical; /* Allow vertical resizing */
-    padding: 0.5rem; /* Add padding to the input field */
-    border: 1px solid #E0E1FC; /* Add a border for clarity */
-    background-color: #E0E1FC; /* Set the background color */
+    width: 100%; 
+    height: 150px;
+    resize: vertical;
+    padding: 0.5rem; 
+    border: 1px solid #E0E1FC; 
+    background-color: #E0E1FC;
     transition: background-color 0.3s;
   }

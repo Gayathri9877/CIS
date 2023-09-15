@@ -1,5 +1,5 @@
 import React, { useState, useRef  } from 'react';
-import './UpdateEvidence.css'; // Include your custom CSS for styling
+import './UpdateEvidence.css'; 
 
 const RegisterEvidence = () => {
   const [crimeID, setCrimeID] = useState('');
