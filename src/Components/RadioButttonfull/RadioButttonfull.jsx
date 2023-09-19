@@ -122,7 +122,7 @@ const RegistrationPage = () => {
 
         
 
-      
+{/*       
         <div className=" raw radio-container">
            <label htmlFor="lifeStatus" className="p2">
              Life Status
@@ -153,9 +153,9 @@ const RegistrationPage = () => {
          </label>
         </div>
         
-        </div>
+        </div> */}
        
-        {/* <div className="radio-group">
+        <div className="radio-group">
           
           <label htmlFor="crimeID" className='p1' >Life Status</label>
           <label className="radio-label">
@@ -163,8 +163,8 @@ const RegistrationPage = () => {
               className="lavender-radio"
               type="radio"
               value="Alive"
-              checked={marriageStatus === 'Alive'}
-              onChange={handleMarriageStatusChange}
+              checked={lifeStatus === 'Alive'}
+              onChange={handleLifeStatusChange}
             />
             <p className='ale'>Alive</p>
           </label>
@@ -173,14 +173,14 @@ const RegistrationPage = () => {
               className='lavender-radio'
               type="radio"
               value="Dead"
-              checked={marriageStatus === 'Dead'}
-              onChange={handleMarriageStatusChange}
+              checked={lifeStatus === 'Dead'}
+              onChange={handleLifeStatusChange}
             />
             <p className='ale'>Dead</p>
           </label>
-        </div> */}
+        </div>
 
-        {/* <div className="radio-group">
+        <div className="radio-group">
           <p className='p1'>In Custody?</p>
           <label className="radio-label">
             <input
@@ -202,9 +202,9 @@ const RegistrationPage = () => {
             />
             <p className='ale'>No</p>
           </label>
-        </div> */}
+        </div>
 
-        {/* <div className="radio-group">
+        <div className="radio-group">
           <p className='p1'>Crime Justified?</p>
           <label className="radio-label">
             <input
@@ -226,7 +226,7 @@ const RegistrationPage = () => {
             />
             <p className='ale'>No</p>
           </label>
-        </div> */}
+        </div>
         <div className="input-container">
           <label htmlFor="nicNumber" className='p1'>NIC Number</label>
           <input
