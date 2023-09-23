@@ -16,7 +16,7 @@ import RegisterVictimfull  from './Pages/RegisterVictimfull';
 import RegisterEvidencefull from './Pages/RegisterEvidencefull';
 import FullUpdateEvidence from './Pages/FullUpdateEvidence';
 import FullRegisterCriminalSuspect from './Pages/FullRegisterCriminalSuspect';
-
+import UpdateCrimeFull from './Pages/UpdateCrimeFull';
 
 
 function App() {
@@ -38,6 +38,7 @@ function App() {
           <Route path='/RegisterEvidencefull' element={<RegisterEvidencefull/>}/>
           <Route path='/FullUpdateEvidence' element={<FullUpdateEvidence/>}/>
           <Route path='/FullRegisterCriminalSuspect'element={<FullRegisterCriminalSuspect/>}/>
+          <Route path='/UpdateCrimeFull'element={<UpdateCrimeFull/>}/>
 
 
         </Routes>
