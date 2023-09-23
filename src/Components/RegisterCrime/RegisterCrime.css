@@ -129,12 +129,24 @@
     align-items: end;
 
 }
+
+
 .photo-preview {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  flex-direction: row-reverse;
+  gap: 10px; 
+  width: auto;
+  height: auto;
+
+}
+
+.photo-cell {
+  width: 200px; 
+  height: 200px; 
+  border: 1px solid #ddd;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .photo-preview img {

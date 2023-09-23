@@ -226,80 +226,100 @@
     margin-top: 20px; }
     
 
-    .data-table {
-      margin-top: 20px;
-      width: 45%;
-      margin-top: 2%;
-      
-      
-    }
-    .data-table1 {
-      margin-top: 20px;
-      width: 45%;
-      border: 2px solid #dfe1fc;
-      border-radius: 10%;
-      margin-bottom: 3%;
+  .data-table {
+    margin-top: 20px;
+    width: 45%;
+    margin-top: 2%;
     
-      
+    
+  }
+  .data-table1 {
+    margin-top: 20px;
+    width: 45%;
+    border: 2px solid #dfe1fc;
+    border-radius: 10%;
+    margin-bottom: 3%;
+  
+    
+  }
+  
+  .data-table-controls {
+    margin-bottom: 10px;
+    
+  }
+    
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px ;
+    
+  }
+  
+  .table, th, td {
+    border: 1px solid navy;
+    
+  }
+  
+  .th, td {
+    padding: 8px;
+    text-align: left;
+    
+  }
+  
+  .th {
+    background-color: white;
+  }
+  
+  
+  .fbtn{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 95px;
+    margin-top: 10px; 
+    width: 45%;
+    margin-bottom: 3%;
+  }
+  
+  
+  .selected {
+    background-color:lavender;
+    border-radius: 10%;
+  }
+  .crime-photo {
+      width: 200px;
+      height: 200px; 
+    }
+
+    .center-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .photo-input {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    
+
+    .photo-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; 
+      width: auto;
+      height: auto;
     }
    
-    .data-table-controls {
-      margin-bottom: 10px;
-      
-    }
-    
-    .table {
-      width: 100%;
-      border-collapse: collapse;
-      border: 2px ;
-      
-    }
-    
-    .table, th, td {
-      border: 1px solid navy;
-      
-    }
-    
-    .th, td {
-      padding: 8px;
-      text-align: left;
-      
-    }
-    
-    .th {
-      background-color: white;
-    }
-    
-    
-    .fbtn{
-      display: flex;
-      flex-direction: row !important;
-      align-items: center;
-      gap: 95px;
-      margin-top: 10px; 
-      width: 45%;
-      margin-bottom: 3%;
-    }
-    
-    
-    .selected {
-      background-color:lavender;
-      border-radius: 10%;
-    }
-    .crime-photo {
-        width: 200px;
-        height: 200px; 
-      }
 
-      .center-input {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-      }
-      
-      .photo-input {
-        width: 100%;
-        margin-top: 10px;
-      }
+    .photo-cell {
+      width: 200px; 
+      height: 200px; 
+      border: 1px solid #ddd;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }

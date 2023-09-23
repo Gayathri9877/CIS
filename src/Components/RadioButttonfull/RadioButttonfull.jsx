@@ -120,113 +120,82 @@ const RegistrationPage = () => {
           />
         </div>
 
-        
-
-{/*       
-        <div className=" raw radio-container">
-           <label htmlFor="lifeStatus" className="p2">
-             Life Status
-           </label>
-  
-           <div className="radio-group">
-           <label className="radio-label">
-           <input
-             className="lavender-radio"
-             type="radio"
-             name="lifeStatus"
-             value="Alive"
-             checked={lifeStatus === 'Alive'}
-             onChange={handleLifeStatusChange}
-          />
-        <p className="ale">Alive</p>
-        </label>
-        <label className="radio-label">
-         <input
-            className="lavender-radio"
-            type="radio"
-            name="lifeStatus"
-            value="Dead"
-            checked={lifeStatus === 'Dead'}
-            onChange={handleLifeStatusChange}
-         />
-         <p className="ale">Dead</p>
-         </label>
-        </div>
-        
-        </div> */}
-       
-        <div className="radio-group">
-          
-          <label htmlFor="crimeID" className='p1' >Life Status</label>
-          <label className="radio-label">
+        <div className="input-container">
+          <label htmlFor="lifeStatus" className="p1">Life Status</label>
+          <div className="radio-buttons-container">
             <input
               className="lavender-radio"
               type="radio"
+              id="alive"
               value="Alive"
               checked={lifeStatus === 'Alive'}
               onChange={handleLifeStatusChange}
             />
-            <p className='ale'>Alive</p>
-          </label>
-          <label className="radio-label">
+            <label className='ale' htmlFor="alive">Alive</label>
+
             <input
               className='lavender-radio'
               type="radio"
+              id="dead"
               value="Dead"
               checked={lifeStatus === 'Dead'}
               onChange={handleLifeStatusChange}
             />
-            <p className='ale'>Dead</p>
-          </label>
+            <label className='ale' htmlFor="dead">Dead</label>
+          </div>
         </div>
 
-        <div className="radio-group">
-          <p className='p1'>In Custody?</p>
-          <label className="radio-label">
+      
+        <div className="input-container">
+          <label htmlFor="inCustody" className="p1">In Custody?</label>
+          <div className="radio-buttons-container">
             <input
-            className='lavender-radio'
+              className="lavender-radio"
               type="radio"
+              id="yesInCustody"
               value="Yes"
               checked={inCustody === 'Yes'}
               onChange={handleInCustodyChange}
             />
-            <p className='ale'>Yes</p>
-          </label>
-          <label className="radio-label">
+            <label className='ale' htmlFor="yesInCustody">Yes</label>
+
             <input
-            className='lavender-radio'
+              className='lavender-radio'
               type="radio"
+              id="noInCustody"
               value="No"
               checked={inCustody === 'No'}
               onChange={handleInCustodyChange}
             />
-            <p className='ale'>No</p>
-          </label>
+            <label className='ale' htmlFor="noInCustody">No</label>
+          </div>
         </div>
 
-        <div className="radio-group">
-          <p className='p1'>Crime Justified?</p>
-          <label className="radio-label">
+        <div className="input-container">
+          <label htmlFor="crimeJustified" className="p1">Crime Justified?</label>
+          <div className="radio-buttons-container">
             <input
-            className='lavender-radio '
+              className="lavender-radio"
               type="radio"
+              id="yesCrimeJustified"
               value="Yes"
               checked={crimeJustified === 'Yes'}
               onChange={handleCrimeJustifiedChange}
             />
-            <p className='ale'>Yes</p>
-          </label>
-          <label className="radio-label">
+            <label className='ale' htmlFor="yesCrimeJustified">Yes</label>
+
             <input
-            className='lavender-radio'
+              className='lavender-radio'
               type="radio"
+              id="noCrimeJustified"
               value="No"
               checked={crimeJustified === 'No'}
               onChange={handleCrimeJustifiedChange}
             />
-            <p className='ale'>No</p>
-          </label>
+            <label className='ale' htmlFor="noCrimeJustified">No</label>
+          </div>
         </div>
+
         <div className="input-container">
           <label htmlFor="nicNumber" className='p1'>NIC Number</label>
           <input

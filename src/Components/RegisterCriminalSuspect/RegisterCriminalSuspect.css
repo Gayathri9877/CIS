@@ -76,55 +76,24 @@
     margin-bottom: none !important;
     width: 100px;
   }
-
-  .radio-container {
-    display: flex !important;
-    flex-direction: row;
-    margin-bottom: 20px;
-    align-items: center; 
-
-  }
   
   .radio-group {
-    display: flex !important;
-    width: auto;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  .radio-label {
-   
-    align-items: center;
-    margin-bottom: 10px;
-    width: auto;
-    margin-right: 200px;
-  }
-  
-  .lavender-radio {
-    margin-right: 10px;
-    width: 10px !important;
-  }
-  
-  
-/* .radio-group {
     display: flex !important;
     align-items: flex-start;
     margin-bottom: 20px;
     margin-top: 1%;
     gap: 70px; 
    
-        
-      
     
-  } */
+  }
 
   
-  /* .radio-label {
+  .radio-label {
     display: flex;
     align-items: center;
     margin-top: auto;
     
-  } */
+  }
   
   .ale {
     font-size: small;
@@ -133,15 +102,15 @@
   }
   
   
-  /* .radio-label + .radio-label {
+  .radio-label + .radio-label {
     margin-left: 5px;
     margin-right: 80%;
-  } */
+  }
   
   
-  /* .radio-group > p {
+  .radio-group > p {
     margin-right: 50px; 
-  } */
+  }
   .inc{
     margin-right: 3%;
   }
@@ -159,15 +128,15 @@
   }
   
   
-  /* input[type="radio"]:checked {
+  input[type="radio"]:checked {
     
     border-color:navy; 
     display: flex;
     align-items: center;
-  } */
+  }
   
 
-  /* input[type="radio"]:checked::before {
+  input[type="radio"]:checked::before {
     
     display: block;
     content:normal;
@@ -176,7 +145,8 @@
     background-color:lavender; 
     border-radius: 50%; 
     margin: 2px; 
-  } */
+  }
+ 
   
   .add-to-crimes-section {
     display: flex;
@@ -322,25 +292,22 @@
       border-radius: 10%;
     }
 
-    /* .lavender-radio{
-        width: 10px !important;
-    } */
 
     .photo-preview {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; 
-  width: auto;
-  height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; 
+      width: auto;
+      height: auto;
 
-}
+    }
 
-.photo-cell {
-  width: 200px; 
-  height: 200px; 
-  border: 1px solid #ddd;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+    .photo-cell {
+      width: 200px; 
+      height: 200px; 
+      border: 1px solid #ddd;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
 

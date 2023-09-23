@@ -86,29 +86,33 @@ const RegisterVictimPage = () => {
             onChange={(e) => setCrimeID(e.target.value)}
           />
         </div>
-        <div className="radio-group">
-          <p className='p1'>Life Status</p>
-          <label className="radio-label">
+
+        <div className="input-container">
+          <label htmlFor="lifeStatus" className="p1">Life Status</label>
+          <div className="radio-buttons-container">
             <input
               className="lavender-radio"
               type="radio"
+              id="alive"
               value="Alive"
               checked={lifeStatus === 'Alive'}
               onChange={handleLifeStatusChange}
             />
-            <p className='ale'>Alive</p>
-          </label>
-          <label className="radio-label">
+            <label className='ale' htmlFor="alive">Alive</label>
+
             <input
               className='lavender-radio'
               type="radio"
+              id="dead"
               value="Dead"
               checked={lifeStatus === 'Dead'}
               onChange={handleLifeStatusChange}
             />
-            <p className='ale'>Dead</p>
-          </label>
+            <label className='ale' htmlFor="dead">Dead</label>
+          </div>
         </div>
+
+
         <div className="input-container">
           <label htmlFor="nic" className='p1'>NIC</label>
           <input

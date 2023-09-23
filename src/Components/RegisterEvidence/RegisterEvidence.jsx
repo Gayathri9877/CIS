@@ -5,15 +5,15 @@ const RegisterEvidence = () => {
   const [crimeID, setCrimeID] = useState('');
   const [evidenceID, setEvidenceID] = useState('');
   const [testimonial, setTestimonial] = useState('');
-  const [crimePhoto, setCrimePhoto] = useState(null);
+  const [evidencePhoto, setEvidencePhoto] = useState(null);
   const [victimPhotos, setVictimPhotos] = useState([]);
   const [selectedVictimPhotoIndex, setSelectedVictimPhotoIndex] = useState(null);
 
   const fileInputRef = useRef(null);
 
-  const handleCrimePhotoChange = (event) => {
+  const handleEvidencePhotoChange = (event) => {
     const selectedPhoto = event.target.files[0];
-    setCrimePhoto(selectedPhoto);
+    setEvidencePhoto(selectedPhoto);
   };
 
   const handleVictimPhotoChange = (event) => {
@@ -36,7 +36,6 @@ const RegisterEvidence = () => {
   };
 
   const handleAddMoreVictimPhotosClick = () => {
-
     fileInputRef.current.click();
   };
 
@@ -50,7 +49,7 @@ const RegisterEvidence = () => {
       crimeID,
       evidenceID,
       testimonial,
-      crimePhoto: crimePhoto ? crimePhoto.name : null,
+      evidencePhoto: evidencePhoto ? evidencePhoto.name : null,
       victimPhotos: victimPhotos.map((photo) => photo.name),
     
     });
@@ -81,21 +80,21 @@ const RegisterEvidence = () => {
         </div>
         <div className="input-container">
           <label htmlFor="photo" className="p1">
-          Photo of the Crime
+          Photo of the Evidence
           </label>
           <input
             type="file"
             id="photo"
             accept="image/*"
-            onChange={handleCrimePhotoChange}
+            onChange={handleEvidencePhotoChange}
             className="photo-input"
           />
         </div>
-        {crimePhoto && (
-          <div className="photo-preview-crime">
-            <h6 ><center>--- Uploaded Crime Photo ---</center></h6>
+        {evidencePhoto && (
+          <div className="photo-preview-evidence">
+            <h6 ><center>--- Uploaded Evidence Photo ---</center></h6>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px' }}>
-            <img src={URL.createObjectURL(crimePhoto)} alt="Uploaded Crime" style={{ maxWidth: '200px', maxHeight: '200px' }}/>
+            <img src={URL.createObjectURL(evidencePhoto)} alt="Uploaded Crime" style={{ maxWidth: '200px', maxHeight: '200px' }}/>
           </div>
           </div>
         )}
@@ -130,30 +129,31 @@ const RegisterEvidence = () => {
         
         </div>
         <div className="photo-preview">
-        {victimPhotos.map((photo, index) => (
-          <div
-          key={index}
-          className={`photo-cell ${selectedVictimPhotoIndex === index ? 'selected' : ''}`}
-          onClick={() => handleVictimPhotoClick(index)}
-        >
-          <img src={URL.createObjectURL(photo)} alt={`Uploaded Victim Photo ${index}`} />
-        </div>
-        ))}
-      
-      <div className="action-buttons">
-          <button className="remove-button" onClick={handleRemoveVictimPhoto}>
-            <div className="icon-circle">
-              <span>-</span>
+            {victimPhotos.map((photo, index) => (
+              <div
+                key={index}
+                className={`photo-cell ${selectedVictimPhotoIndex === index ? 'selected' : ''}`}
+                onClick={() => handleVictimPhotoClick(index)}
+              >
+                <img src={URL.createObjectURL(photo)} alt={`Uploaded Victim Photo ${index}`} />
+              </div>
+            ))}
+          </div>
+
+          <div className="action-buttons">
+            <button className="remove-button" onClick={handleRemoveVictimPhoto}>
+              <div className="icon-circle">
+                <span>-</span>
+              </div>
+              Remove this Photo
+            </button>
+            <button className="add-button" onClick={handleAddMoreVictimPhotosClick}>
+              <div className="icon-circle">
+                <span>+</span>
+              </div>
+              Add more Photos
+            </button>
             </div>
-            Remove this Photo
-          </button>
-          <button className="add-button" onClick={handleAddMoreVictimPhotosClick}>
-            <div className="icon-circle">
-              <span>+</span>
-            </div>
-            Add more Photos
-          </button>
-        </div>
 
         
         <button onClick={handleRegistration} className="btn" >
@@ -161,7 +161,7 @@ const RegisterEvidence = () => {
         </button>
       </div>
     </div>
-    </div>
+    
   );
 };
 

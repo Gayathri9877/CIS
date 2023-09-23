@@ -129,6 +129,7 @@
     align-items: end;
 
 }
+
 .photo-preview {
   margin-top: 20px;
   display: flex;
@@ -138,7 +139,6 @@
 }
 
 .photo-preview img {
-  
   width: 300px;
   height: auto;
   
@@ -150,77 +150,54 @@
     width: auto;
     height: auto;
   }
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    gap: 20px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
   
-.radio-group {
-    display: flex !important;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    margin-top: 1%;
-    gap: 70px;
-        
-      
+  }
+  .radio-buttons-container {
+    display: flex;
+    align-items: center;
     
   }
-  
+
   .radio-label {
     display: flex;
     align-items: center;
-    margin-top: auto;
+    gap: 10px;
     
   }
   
-  .ale {
-    font-size: small;
-    color: black;
-    margin-left: 5px;
-  }
-  
-  
-  .radio-label + .radio-label {
-    margin-left: 5px; 
-    margin-right: 80%;
-  }
-  
-  
-  .radio-group > p {
-    margin-right: 70px;
-  }
-  .inc{
-    margin-right: 3%;
-  }
 
-  input[type="radio"] {
-    appearance: none; 
+  .lavender-radio {
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 16px;
     height: 16px;
     border: 1px solid lavender;
-    border-radius: 50%; 
+    border-radius: 50%;
     outline: none;
     margin-right: 5px;
   }
   
 
-  input[type="radio"]:checked {
-    
-    border-color:navy; 
-    display: flex;
-    align-items: center;
+  .lavender-radio:checked {
+    border-color: navy;
   }
   
  
-  input[type="radio"]:checked::before {
-
-    display: block;
-    content:normal;
-    width: 10px;
-    height: 10px;
-    background-color:lavender; 
-    border-radius: 50%;
-    margin: 2px; 
+  .ale {
+    font-size: small;
+    color: black;
+    margin-left: 5px;
   }
-  
+
   .large-input {
     width: 100%;
     height: 150px;
@@ -229,4 +206,24 @@
     border: 1px solid #E0E1FC; 
     background-color: #E0E1FC;
     transition: background-color 0.3s;
+  }
+
+  
+
+  .photo-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    width: auto;
+    height: auto;
+
+  }
+
+  .photo-cell {
+    width: 200px; 
+    height: 200px; 
+    border: 1px solid #ddd;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
