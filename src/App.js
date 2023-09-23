@@ -18,6 +18,7 @@ import FullUpdateEvidence from './Pages/FullUpdateEvidence';
 import FullRegisterCriminalSuspect from './Pages/FullRegisterCriminalSuspect';
 import UpdateCrimeFull from './Pages/UpdateCrimeFull';
 import UpdateVictimfull from './Pages/UpdateVictimFull';
+import UpdateCriminalSuspectFull from './Pages/UpdateCriminalSuspectFull';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path='/FullRegisterCriminalSuspect'element={<FullRegisterCriminalSuspect/>}/>
           <Route path='/UpdateCrimeFull'element={<UpdateCrimeFull/>}/>
           <Route path='/UpdateVictimFull'element={<UpdateVictimfull/>}/>
+          <Route path='/UpdateCriminalSuspectFull' element={<UpdateCriminalSuspectFull/>}/>
 
 
         </Routes>

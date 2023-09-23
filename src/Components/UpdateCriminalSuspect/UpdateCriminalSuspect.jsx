@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import './RegisterCriminalSuspect.css';
+import './UpdateCriminalSuspect.css';
 
-const RegisterCriminalSuspect = () => {
+const UpdateCriminalSuspect = () => {
   const [crimeID, setCrimeID] = useState('');
   const [lifeStatus, setLifeStatus] = useState('');
   const [inCustody, setInCustody] = useState('');
@@ -17,7 +17,6 @@ const RegisterCriminalSuspect = () => {
   const [landMark, setLandMark] = useState('');
   const [victimPhotos, setVictimPhotos] = useState([]);
   const [selectedVictimPhotoIndex, setSelectedVictimPhotoIndex] = useState(null);
-;
   const fileInputRef = useRef(null); 
   const [photo, setPhoto] = useState(null);
   const [description, setDescription] = useState('');
@@ -135,7 +134,7 @@ const RegisterCriminalSuspect = () => {
 
   return (
     <div className="registration-container">
-      <h3>Register Criminal/Suspect Details</h3>
+      <h3>Update Criminal/Suspect Details</h3>
       <div className="registration-form">
         <div className="input-container">
           <label htmlFor="crimeID" className='p1'>Criminal/Suspect ID</label>
@@ -441,12 +440,12 @@ const RegisterCriminalSuspect = () => {
   
 
       <div className='fbtn'><button onClick={handleRegistration} className="btn">
-          Register
+          Update
         </button>
     </div>
    </div>
   );
 };
 
-export default RegisterCriminalSuspect;
+export default UpdateCriminalSuspect;
 
