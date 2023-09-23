@@ -1,5 +1,6 @@
 import React, { useState, useRef  } from 'react';
 import './RegisterVictim.css'; 
+import { NavLink } from 'react-router-dom';
 
 const RegisterVictimPage = () => {
   const [crimeID, setCrimeID] = useState('');
@@ -249,7 +250,7 @@ const RegisterVictimPage = () => {
         </div>
         
         <button onClick={handleRegistration} className="btn" >
-          Register 
+        <NavLink to="/RegisterEvidencefull">Register </NavLink>
         </button>
       </div>
     </div>

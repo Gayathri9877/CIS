@@ -4,6 +4,7 @@ import RegisterCrime from '../Components/RegisterCrime/RegisterCrime';
 import Footer from '../Components/Footer/footer';
 
 
+
 export default function Registercrimefull() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
