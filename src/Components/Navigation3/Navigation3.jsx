@@ -1,9 +1,9 @@
 import React from 'react';
-import './Navigation2.css'; 
+import './Navigation3.css'; 
 import { NavLink } from 'react-router-dom';
 
 
-const Navigation2 = () => {
+const Navigation3 = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -12,18 +12,20 @@ const Navigation2 = () => {
       </div>
       <div className="navbar-center mt-2" >
         <ul className="navbar-links ">
-        <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/FullUserdetails">New Registration</NavLink></li>
-          <li><NavLink to="/UpdateUserDetails">Update</NavLink></li>
-          <li><NavLink to="">Support</NavLink></li>
+        <li><NavLink to="">Home</NavLink></li>
+          <li><NavLink to="">About Us</NavLink></li>
+          <li><NavLink to="">Contact Us</NavLink></li>
+          <li><NavLink to="">News & Updates</NavLink></li>
+          <li><NavLink to="">FAQ & Help</NavLink></li>
+          <li><NavLink to="">Legal & Privacy</NavLink></li>
          
         </ul>
       </div>
       <div className="navbar-right" style={{ marginRight: '20px' }}>
   <button className="user-button" >
-    <span className="username">Gayathri rasangika</span>
+    <span className="username">Sign In</span>
     <div className="profile-picture-frame">
-      <img src="assets/images/man.png" alt="Profile" className="profile-picture" />
+      <img src="assets/images/SignIn.png" alt="Profile" className="profile-picture" />
     </div>
   </button>
 </div>
@@ -33,4 +35,4 @@ const Navigation2 = () => {
   );
 };
 
-export default Navigation2;
+export default Navigation3;

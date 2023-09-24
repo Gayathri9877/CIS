@@ -5,7 +5,9 @@ import SearchBar from './Components/Searchbar/Searchbar';
 import ITOfficer from './Pages/itofficer';
 import RegistrationPage from './Components/RegistrationPage/RegistrationPage';
 import FullUserdetails  from './Pages/FullUserdetails';
+import Navigation from './Components/Navigation/Navigation';
 import Navigation2 from './Components/Navigationbar2/Navigation2';
+import Navigation3 from './Components/Navigation3/Navigation3';
 import UpdateUserDetails from './Pages/UpdateUserDetails';
 import UserPersona from './Components/UserPersona/UserPersona';
 import FullUserPersona from './Pages/FullUserPersona';
@@ -30,7 +32,6 @@ function App() {
           <Route path="/ITofficer" element={<ITOfficer/>}/>
           <Route path="/RegistrationPage" element={<RegistrationPage/>}/>
           <Route path="/FullUserdetails"element={<FullUserdetails/>}/>
-          <Route path='/Navigation2' element={<Navigation2/>}/> 
           <Route path='/UpdateUserDetails' element={<UpdateUserDetails/>}/>
           <Route path='/UserPersona' element={<UserPersona/>}/>
           <Route path='/FullUserPersona' element={<FullUserPersona/>}/>
@@ -44,6 +45,7 @@ function App() {
           <Route path='/UpdateVictimFull'element={<UpdateVictimfull/>}/>
           <Route path='/UpdateCriminalSuspectFull' element={<UpdateCriminalSuspectFull/>}/>
           <Route path='/UpdateExistingFull' element={<UpdateExistingFull/>}/>
+
 
 
         </Routes>
