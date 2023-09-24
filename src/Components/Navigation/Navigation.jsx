@@ -13,10 +13,10 @@ const NavigationBar = () => {
       <div className="navbar-center mt-2" >
         <ul className="navbar-links ">
           <li><NavLink to="/Registercrimefull">New registration</NavLink></li>
-          <li><NavLink to="/">Crimes</NavLink></li>
-          <li><NavLink to="/">Criminals</NavLink></li>
-          <li><NavLink to="/">Victims</NavLink></li>
-          <li><NavLink to="/">Evidences</NavLink></li>
+          <li><NavLink to="/UpdateCrimeFull">Crimes</NavLink></li>
+          <li><NavLink to="/UpdateCriminalSuspectFull">Criminals</NavLink></li>
+          <li><NavLink to="/UpdateVictimfull">Victims</NavLink></li>
+          <li><NavLink to="/FullUpdateEvidence">Evidences</NavLink></li>
         </ul>
       </div>
       <div className="navbar-right" style={{ marginRight: '20px' }}>
