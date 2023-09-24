@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './UpdateCriminalSuspect.css';
 
+
 const UpdateCriminalSuspect = () => {
   const [crimeID, setCrimeID] = useState('');
   const [lifeStatus, setLifeStatus] = useState('');
