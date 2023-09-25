@@ -1,17 +1,12 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
-import SearchBar from './Components/Searchbar/Searchbar'; 
 import ITOfficer from './Pages/itofficer';
 import RegistrationPage from './Components/RegistrationPage/RegistrationPage';
 import FullUserdetails  from './Pages/FullUserdetails';
-import Navigation from './Components/Navigation/Navigation';
-import Navigation2 from './Components/Navigationbar2/Navigation2';
-import Navigation3 from './Components/Navigation3/Navigation3';
 import UpdateUserDetails from './Pages/UpdateUserDetails';
 import UserPersona from './Components/UserPersona/UserPersona';
 import FullUserPersona from './Pages/FullUserPersona';
-import RadioButttonfull from './Components/RadioButttonfull/RadioButttonfull';
 import Suspect from './Pages/Suspect';
 import Registercrimefull from './Pages/Registercrimefull';
 import RegisterVictimfull  from './Pages/RegisterVictimfull';
@@ -22,6 +17,23 @@ import UpdateCrimeFull from './Pages/UpdateCrimeFull';
 import UpdateVictimfull from './Pages/UpdateVictimFull';
 import UpdateCriminalSuspectFull from './Pages/UpdateCriminalSuspectFull';
 import UpdateExistingFull from './Pages/UpdateExistingFull';
+
+import HomePO from './PagesPO/HomePO';
+import Search from './PagesPO/Search';
+import SearchBiometrics from './PagesPO/SearchBiometrics';
+import SearchResult from './PagesPO/SearchResult';
+import Victims from './PagesPO/Victims';
+import Captures from './PagesPO/Captures';
+import Crime from './PagesPO/Crime';
+import Evidences from './PagesPO/Evidences';
+import Reports from './PagesPO/Reports';
+import Support from './PagesPO/Support';
+import ReportResponse from './PagesPO/ReportResponse';
+import HomeGeneral from './GeneralPages/HomeGeneral';
+import Help from './GeneralPages/Help';
+import News from './GeneralPages/News';
+import Contact from './GeneralPages/Contact';
+
 
 function App() {
   return (
@@ -46,8 +58,21 @@ function App() {
           <Route path='/UpdateCriminalSuspectFull' element={<UpdateCriminalSuspectFull/>}/>
           <Route path='/UpdateExistingFull' element={<UpdateExistingFull/>}/>
 
-
-
+          <Route path="/HomePO" element={<HomePO/>} />          
+          <Route path="/Search" element={<Search/>} />
+          <Route path="/SearchBiometrics" element={<SearchBiometrics/>} />
+          <Route path="/SearchResult" element={<SearchResult/>} />
+          <Route path="/Victims" element={<Victims/>} />
+          <Route path="/Captures" element={<Captures/>} />
+          <Route path="/Crime" element={<Crime/>} />
+          <Route path="/Evidences" element={<Evidences/>} />
+          <Route path="/Reports" element={<Reports/>} /> 
+          <Route path="/Support" element={<Support/>} />
+          <Route path="/ReportResponse" element={<ReportResponse/>} />
+          <Route path="/HomeGeneral" element={<HomeGeneral/>} />
+          <Route path="/Help" element={<Help/>} />
+          <Route path="/News" element={<News/>} />
+          <Route path="/Contact" element={<Contact/>} />
         </Routes>
       </BrowserRouter>
     </div>
