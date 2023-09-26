@@ -1,7 +1,6 @@
 import React from 'react';
 import Navigation from '../Components/Navigation/Navigation';
 import UpdateVictim from '../Components/UpdateVictim/UpdateVictim';
-import Footer from '../Components/Footer/footer';
 
 
 export default function UpdateVictimfull() {
@@ -11,9 +10,7 @@ export default function UpdateVictimfull() {
       <div style={{ flex: 1 }}>
         <UpdateVictim/>
       </div>
-      <div>
-        <Footer/>
-      </div>
+     
     </div>
   );
 }

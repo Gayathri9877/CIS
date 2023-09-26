@@ -83,91 +83,6 @@
       flex: 1; 
     }
     
-    /* Footer */
-  
-    .footer {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #E0E1FC;
-      color: black;
-      padding: 20px;
-      border-radius: 20px 20px 0 0;
-      position: absolute;
-      width: 97.4%;
-      margin-top: auto; 
-    }
-      .text01{
-        
-        font-size: xx-large;
-        color: #000066;
-        margin-top:20px ;
-        font-weight: bold !important;
-        
-      }
-
-      .column {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-      }
-      
-      .icon {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-      }
-      
-      .text {
-        margin: 5px 0;
-      }
-      
-      .title {
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      
-      .link,
-      .social-link {
-        cursor: pointer;
-        margin: 5px 0;
-      }
-      
-      .social-img {
-        width: 20px; 
-        height: 20px; 
-        margin-right: 5px;
-      }
-      .social-icon {
-        display: flex;
-        align-items: center;
-      }
-    
-      .subpart{
-        font-size: 14px; 
-        color: ash; 
-        margin-left: 25px; 
-      }
-    
-      .logo1{
-        width: 50px;
-        height: 50px;
-        
-      }
-      .two-line-text {
-        display: flex;
-        flex-direction: column;
-      }
-    
-      .text02{
-        color: #000066;
-        margin-left: 10px;
-      }
-    .text03{
-        font-size: 12px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
 
     /*Investigation.css*/
 
@@ -178,39 +93,39 @@
     }
 
     .Investigation-text{
-        font-size: 50px;
+        font-size: 46px;
         color: #004747;
-        font-weight: bold;
+       margin-bottom: 35px;
+       font-weight: bold;
 
     }
     
     .Investigation-content{
-        font-size: 22px;
+        font-size: 18px;
         color: black;
-        font-weight: bold;
         line-height: 12px;
 
     }
 
     /*Options.css*/
 
-    .search-options {
+    .search-options-police {
         display: flex;
         align-items: center; 
         margin: 30px 0 0 740px;
       }
       
-      .search-options label {
+      .search-options-police label {
         display: flex;
         align-items: center;
         margin-right: 22px; 
-        cursor: pointer;
-      
+        color: black;
+        font-weight: normal;
       }
       
-      .search-options input[type="radio"] {
+      .search-options-police input[type="radio"] {
         margin-right: 10px;
-        color: black;
+        cursor: pointer;
       }
       
 
@@ -228,20 +143,20 @@
       }
   
       /*SearchTypeBox.css*/
-      .search-box {
+      .search-boxA {
         display: flex;
         align-items: center;
         margin: 100px 0 0 800px;
-       
+        width: 460px;
       }
       
-      .search-input {
-        width: 450px;
-        height: 34px;
+      .search-inputA {
+      
+        height: 40px;
         padding: 5px;
         font-size: 14px;
         color: #6a6565;
-        border: 2px solid #000000;
+        border: 1px solid #000000;
         border-radius: 8px;
       
       }
@@ -357,8 +272,8 @@
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    width: 140px;
-    margin: 5px;
+    width: 207px;
+    margin: 20px;
   }
  
   .button-scan-face {
@@ -367,43 +282,50 @@
   }
 
   .button-upload-photo {
-    background-color: #000066;
-  }
-
-  .button-fingerprint {
     background-color: #004747;
   }
 
+  
   .button:hover {
     opacity: 0.8;
   }
 
   /*ReportBox.css*/
 
-.Report-options {
+.Report-options-PO {
   display: flex;
   flex-direction: column;
   margin: 175px 0 0 550px;
 }
 
-.Report-options label {
-  display: flex;
+.Report-options-PO label {
+  display: block;
   align-items: center;
-  margin: 0 0 0 0;
-  cursor: pointer;
   font-weight: bold;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
+ 
 }
 
-.ab{
+.Report-options-PO input[type="radio"] {
+  margin-right: 20px;
+  cursor: pointer;
+  
+}
+
+
+.Report-options-PO input[type="radio"]:checked + label {
+  color: #000066; /* Change the color to your preferred highlight color */
+}
+
+.ab-PO{
   color: rgb(53, 51, 51);
   font-size: 16px;
   margin-left: 10px;
 }
-.Request-input{
-  width: 450px;
-  height: 30px;
+.Request-input-PO{
+  width: 460px;
+  height: 40px;
   padding: 5px;
   font-size: 14px;
   color: #9F9F9F;
@@ -414,7 +336,7 @@
   margin-right: 10px; 
   margin-top: -80 px;
 }
-.Request-button{
+.Request-button-PO{
   width: 460px;
   height: 34px;
   margin-top: 30px;
@@ -426,7 +348,7 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.Request-box{
+.Request-box-PO{
   display: flex;
   align-items: center;
   margin: 20px  0 0 595px;

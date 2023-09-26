@@ -22,7 +22,7 @@ function ReportBox() {
 
   return (
     <div >
-      <div className="Report-options">
+      <div className="Report-options-PO">
   <label>
   <input
     type="radio"
@@ -32,7 +32,7 @@ function ReportBox() {
   />
   Criminal ID
 </label>
-<p className='ab'>If you need included all crimes click here</p>
+<p className='ab-PO'>If you need included all crimes click here</p>
 
 <label>
   <input
@@ -43,21 +43,21 @@ function ReportBox() {
   />
   Crime ID
 </label>
-<p className='ab'>If you need a report for one crime click here</p>
+<p className='ab-PO'>If you need a report for one crime click here</p>
 
 </div>
 
-      <div className="Request-box">
+      <div className="Request-box-PO">
         <input
           type="text"
           placeholder="  Type ID here"
-          className="Request-input"
+          className="Request-input-PO"
           value={searchValue}
           onChange={handleSearchValueChange}
         />
         </div>
         <Link to="/ReportResponse">
-        <button className="Request-button" onClick={handleSearch}>
+        <button className="Request-button-PO" onClick={handleSearch}>
          Send Request
         </button>
         </Link>

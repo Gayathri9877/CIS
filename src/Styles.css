@@ -7,42 +7,32 @@
    }
 
 
-.welcome-heading {
-  font-size: 50px;
+.welcome-heading h1 {
+  font-size: 70px;
   font-weight: bold;
   color: #004747;
   align-items: center; 
-  margin-bottom: -20px;
-
-}
-
-.sub-heading {
-  text-align: left;
-  margin-top: -50px;
  
 
 }
 
-.sub-heading p {
+.sub-heading1 {
+  text-align: left;
   font-size: 36px;
   color: black;
   align-items: center;
-  font-weight: bold;
   
+ 
+
 }
+
 
 .sub-heading2 {
   text-align: left;
-  margin-top: -60px;
-
-}
-
-.sub-heading2 p {
   font-size: 36px;
   color: black;
   align-items: center;
-  font-weight: bold;
-  
+
 }
 
 
@@ -80,7 +70,7 @@
   margin-left: 80px;
 }
 
-.Search-options{
+.Search-options1{
   margin-left: -25px;
   margin-top: 50px;
 }

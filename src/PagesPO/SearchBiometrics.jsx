@@ -1,7 +1,7 @@
 import React from "react";
 import ScanBox from '../ComponentsPO/ScanBox';
 import Investigation from "../ComponentsPO/Investigation";
-import Options from "../ComponentsPO/Options";
+import OptionsPO from "../ComponentsPO/OptionsPO";
 import BiometricsButtons from '../ComponentsPO/BiometricsButtons';
 import SearchButton from "../ComponentsPO/SearchButton";
 import '../Styles.css';
@@ -17,7 +17,7 @@ function SearchBiometrics() {
     <Investigation/>
     </div>
     <div className='Biometrics-options'>
-    <Options/>
+    <OptionsPO/>
     </div>
     <div className='Biometrics-buttons'>
     <BiometricsButtons/>

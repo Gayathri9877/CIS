@@ -33,12 +33,16 @@ import HomeGeneral from './GeneralPages/HomeGeneral';
 import Help from './GeneralPages/Help';
 import News from './GeneralPages/News';
 import Contact from './GeneralPages/Contact';
-
+import NavigationBarPO from './ComponentsPO/NavigationbarPO';
+import Footer from './Components/Footer/footer';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <nav>
+        <NavigationBarPO/>
+      </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ITofficer" element={<ITOfficer/>}/>
@@ -74,6 +78,9 @@ function App() {
           <Route path="/News" element={<News/>} />
           <Route path="/Contact" element={<Contact/>} />
         </Routes>
+        <footer >
+          <Footer/>
+        </footer>
       </BrowserRouter>
     </div>
   );

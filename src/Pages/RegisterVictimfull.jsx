@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Components/Navigation/Navigation';
 import RegisterVictimPage from '../Components/RegisterVictim/RegisterVictim';
-import Footer from '../Components/Footer/footer';
+
 
 
 export default function RegisterVictimfull() {
@@ -11,9 +11,7 @@ export default function RegisterVictimfull() {
       <div style={{ flex: 1 }}>
         <RegisterVictimPage/>
       </div>
-      <div>
-        <Footer/>
-      </div>
+    
     </div>
   );
 }

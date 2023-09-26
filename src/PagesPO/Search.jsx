@@ -1,8 +1,8 @@
 import React from 'react';
 import '../Styles.css';
-import imageSrc from '../Assets/Face recognition.gif';
+import imageSrc from '../Assets/image1.png';
 import Investigation from '../ComponentsPO/Investigation';
-import Options from '../ComponentsPO/Options';
+import OptionsPO from '../ComponentsPO/OptionsPO';
 import SearchTypeBox from '../ComponentsPO/SearchTypeBox';
 import SearchButton from '../ComponentsPO/SearchButton';
 
@@ -15,8 +15,8 @@ function Search() {
     <div className='Search-investigation'>
     <Investigation/>
     </div>
-    <div className='Search-options'>
-    <Options/>
+    <div className='Search-options1'>
+    <OptionsPO/>
     </div>
     <div className='Search-searchtypebox'>
     <SearchTypeBox/>

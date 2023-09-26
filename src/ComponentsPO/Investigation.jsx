@@ -6,8 +6,8 @@ export default function Investigation() {
     <div className='Investigation-container'>  
         <h1 className='Investigation-text'>Criminal Investigation</h1>
         <div className='Investigation-content'>
-        <p>Identify unknown suspects or criminals using face detection,</p> 
-        <p>fingerprint, or bio data.</p>
+        <p>Identify unknown suspects or criminals using face Recognition</p> 
+        <p> or bio data.</p>
         </div>
     </div>
     

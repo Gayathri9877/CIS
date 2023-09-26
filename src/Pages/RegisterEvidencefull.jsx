@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Components/Navigation/Navigation';
 import RegisterEvidence from '../Components/RegisterEvidence/RegisterEvidence';
-import Footer from '../Components/Footer/footer';
+
 
 
 export default function RegisterEvidencefull() {
@@ -11,9 +11,7 @@ export default function RegisterEvidencefull() {
       <div style={{ flex: 1 }}>
         <RegisterEvidence/>
       </div>
-      <div>
-        <Footer/>
-      </div>
+    
     </div>
   );
 }

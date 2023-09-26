@@ -3,11 +3,11 @@ import '../Components.css';
 
 function SearchBox({ searchValue, onSearchValueChange }) {
   return (
-    <div className="search-box">
+    <div className="search-boxA">
       <input
         type="text"
         placeholder="   Type NIC or Name here"
-        className="search-input"
+        className="search-inputA"
         value={searchValue}
         onChange={onSearchValueChange}
       />
