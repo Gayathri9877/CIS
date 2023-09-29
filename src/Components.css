@@ -93,10 +93,10 @@
     }
 
     .Investigation-text{
-        font-size: 46px;
+        font-size: 42px;
         color: #004747;
        margin-bottom: 35px;
-       font-weight: bold;
+       font-weight: normal;
 
     }
     
@@ -104,30 +104,35 @@
         font-size: 18px;
         color: black;
         line-height: 12px;
+       
 
     }
 
     /*Options.css*/
 
-    .search-options-police {
-        display: flex;
-        align-items: center; 
-        margin: 30px 0 0 740px;
-      }
-      
-      .search-options-police label {
-        display: flex;
-        align-items: center;
-        margin-right: 22px; 
-        color: black;
-        font-weight: normal;
-      }
-      
-      .search-options-police input[type="radio"] {
-        margin-right: 10px;
-        cursor: pointer;
-      }
-      
+.search-options-police {
+  text-align: center;
+  margin: 20px;
+  margin-left: 600px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  width: 460px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Add any additional styling you need here */
+
 
       /*SearchButton.css*/
 
@@ -155,7 +160,7 @@
         height: 40px;
         padding: 5px;
         font-size: 14px;
-        color: #6a6565;
+        color: black;
         border: 1px solid #000000;
         border-radius: 8px;
       
@@ -288,6 +293,24 @@
   
   .button:hover {
     opacity: 0.8;
+  }
+
+  .biometrics-photo-container {
+    margin-top: 10px;
+    text-align: center;
+    
+  }
+  
+  .biometrics-photo-container img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .biometrics-photo-container button {
+    background-color: #B72E2E;
+    color: white;
+    margin-top: 5px;
+   
   }
 
   /*ReportBox.css*/
