@@ -58,12 +58,12 @@
   align-items: center; 
   margin-top: 0px;
   margin-right: 50%;
-  width: 630px;
+  width: 700px;
   height: 700px;
 }
 
 .Search-content{
-  margin-left: 0;
+  margin-left: 100px;
 }
 
 .Search-investigation{
@@ -90,21 +90,24 @@
 .SearchBiometrics-container{
   background: white;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 10px; 
   box-sizing: border-box; 
+  margin-left: -200px;
 }
 
 .Biometrics-investigation{
-    margin-top: -610px;
+    margin-top: 0px;
     margin-left: 80px;
 }
 
 .Biometrics-options{
-  margin-left: -20px;
+  margin-top: 20px;
+  margin-left: -15px;
+  margin-bottom: -10px;
 }
 
 .Biometrics-buttons{
@@ -115,6 +118,7 @@
 .Biometrics-searchbutton{
   margin-left: 720px;
   margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 /*Reports.css*/
