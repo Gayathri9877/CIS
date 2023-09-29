@@ -6,7 +6,7 @@ function SearchBox({ searchValue, onSearchValueChange }) {
     <div className="search-boxA">
       <input
         type="text"
-        placeholder="   Type NIC or Name here"
+        placeholder="Type NIC or Name here"
         className="search-inputA"
         value={searchValue}
         onChange={onSearchValueChange}
