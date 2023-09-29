@@ -22,6 +22,7 @@ import UpdateCrimeFull from './Pages/UpdateCrimeFull';
 import UpdateVictimfull from './Pages/UpdateVictimFull';
 import UpdateCriminalSuspectFull from './Pages/UpdateCriminalSuspectFull';
 import UpdateExistingFull from './Pages/UpdateExistingFull';
+import FullsystemHome from './Pages/FullsystemHome';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path='/UpdateVictimFull'element={<UpdateVictimfull/>}/>
           <Route path='/UpdateCriminalSuspectFull' element={<UpdateCriminalSuspectFull/>}/>
           <Route path='/UpdateExistingFull' element={<UpdateExistingFull/>}/>
+          <Route path='/FullsystemHome' element={<FullsystemHome/>}/>
 
 
 
