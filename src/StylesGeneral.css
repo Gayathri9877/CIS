@@ -1,0 +1,45 @@
+/*SignInGeneral.css*/
+
+
+.Profile-User-General{
+    width: 140px;
+    height: 140px;
+    margin-left: 690px;
+    margin-top: 10px;
+}
+
+.SignIn-one{
+    background: white;
+    width: 400px;
+    padding: 3px;
+    margin: 60px 0 0 570px;
+}
+
+.SignIn-name{
+    margin-bottom: 30px;
+}
+
+.SignIn-password{
+    margin-bottom: 25px;
+}
+
+.SignIn-fogot-password{
+    color: #000066;
+    font-weight: normal;
+}
+
+.SignIn-Button-General{
+   margin-left: 20px;
+    
+}
+
+.form-control{
+    border-color: black;
+    border-width: 10px;
+    border-width: 5px;
+}
+
+.SignIn-remember-me{
+    color: black;
+    font-weight: normal;
+}
