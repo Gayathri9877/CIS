@@ -63,7 +63,11 @@ export default function SystemHome() {
         </div>
         <div className='pol1'>
           <h6>"We must build bridges of trust between law enforcement and the public to create a safer society."</h6>
-            <h6><i>John Anderson</i><i>Cheif Police Officer</i></h6>
+          <p className='po1'>
+            <i>John Anderson</i>
+            <br />
+            <i>Cheif Police Officer</i>
+          </p>
         </div>
         
       </div>
