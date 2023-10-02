@@ -59,7 +59,7 @@ export default function SystemHome() {
       <hr class="styled-line"></hr>
       <div className='section'>
       <div className=''>
-          <img src="./assets/images/FaceGlitch.gif" alt="" srcset="" className='show1'/>
+          <img src="./assets/images/officer2.jpg" alt="" srcset="" className='show1'/>
         </div>
         <div className='pol1'>
           <h6>"We must build bridges of trust between law enforcement and the public to create a safer society."</h6>
@@ -68,9 +68,25 @@ export default function SystemHome() {
             <br />
             <i>Cheif Police Officer</i>
           </p>
-        </div>
+          </div>
+        </div> 
+
+        <div className='section2'>
+      
+        <div className='pol2'>
+          <h6>"In the pursuit of justice, we navigate the darkest corners of society."</h6>
+          <p className='po2'>
+            <i>Jude Robinson </i>
+            <br />
+            <i>Cheif Criminal Office</i>
+          </p>
+          </div>
+          <div className=''>
+            <img src="./assets/images/officer1.jpg" alt="" srcset="" className='show1'/>
+          </div>
+        </div> 
         
       </div>
-    </div>
+    
   );
 }

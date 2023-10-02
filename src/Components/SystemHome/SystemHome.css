@@ -58,8 +58,20 @@
     margin-left: 80px;
 }
 .pol1{
-    margin-top: 30px;
+    margin-top: 70px;
+}
+.pol2{
+    margin-top: 70px;
+
 }
 .po1{
-    margin-left: 30px;
+    margin-left: 80px;
+}
+.po2{
+    
+    margin-left: 80px;
+}
+.section2{
+    margin-left: 600px;
+    display: flex;
 }
