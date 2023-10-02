@@ -33,15 +33,12 @@
 
 }
 .learn-more-button {
-
-    background-color: navy; 
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    
+        background-color: navy;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
 }
 .styled-line{
     margin-left: 80px;
@@ -74,4 +71,37 @@
 .section2{
     margin-left: 600px;
     display: flex;
+}
+.stations {
+    margin-top: 30px;
+    display: flex;
+    
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+  
+.stat {
+    
+    margin-right: 75px;
+}
+  
+.stat img {
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+.dep{
+    margin-top: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight:400;
+}
+.see-buttons{
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

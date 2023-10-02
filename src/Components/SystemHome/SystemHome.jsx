@@ -85,6 +85,29 @@ export default function SystemHome() {
             <img src="./assets/images/officer1.jpg" alt="" srcset="" className='show1'/>
           </div>
         </div> 
+
+        <div className="stations">
+          <div className="stat">
+            <img src="./assets/images/station1.jpg" alt="police-satation" />
+            <p className='dep'>Police Office</p>
+          </div>
+          <div className="stat">
+            <img src="./assets/images/station2.jpg" alt="criminal-department" />
+            <p className='dep'>Criminal Department</p>
+          </div>
+          <div className="stat">
+            <img src="./assets/images/station3.jpg" alt="IT-department" />
+            <p className='dep'>IT Department</p>
+          </div>
+          
+        </div>
+         <div className="see-buttons">
+            <button className="learn-more-button" >
+              See more
+            </button>
+          </div>
+          <h2 className='title'>Our Statistics Overview</h2>
+          <hr class="styled-line"></hr>
         
       </div>
     
