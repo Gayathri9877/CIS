@@ -41,12 +41,31 @@ export default function SystemHome() {
           align-items={'center'}
         />
       </div>
+      <h2 className='title'>Welcome to the Criminal Identification System</h2>
       <div className='section'>
-        <h2 className='title'>Welcome to the Criminal Identification System</h2>
-        <p className='para'>A Sri Lankan criminal identification page refers to an official online platform or webpage maintained by the law enforcement or government authorities in Sri Lanka. This webpage serves as a centralized and digital repository for criminal identification and related information. It typically includes databases of individuals with criminal records, fingerprints, photographs, and other biometric data, allowing authorized users, such as law enforcement agencies, to efficiently access and verify the identities of individuals involved in criminal investigations, legal proceedings, or background checks. The Sri Lankan criminal identification page plays a crucial role in maintaining public safety, aiding law enforcement efforts, and ensuring the integrity of the criminal justice system in Sri Lanka.</p>
+        <div className='paras'>
+          <p>A Sri Lankan criminal identification page refers to an official online platform or webpage maintained by the law enforcement or government authorities in Sri Lanka. This webpage serves as a centralized and digital repository for criminal identification and related information. It typically includes databases of individuals with criminal records, fingerprints, photographs, and other biometric data, allowing authorized users, such as law enforcement agencies, to efficiently access and verify the identities of individuals involved in criminal investigations, legal proceedings, or background checks. The Sri Lankan criminal identification page plays a crucial role in maintaining public safety, aiding law enforcement efforts, and ensuring the integrity of the criminal justice system in Sri Lanka.</p>
+          <div className="desc-buttons">
+            <button className="learn-more-button">
+              Learn more
+            </button>
+          </div>
+        </div>
+        <div className=''>
+          <img src="./assets/images/FaceGlitch.gif" alt="" srcset="" className='show'/>
+        </div>
       </div>
+      <h2 className='title'>Our Department</h2>
+      <hr class="styled-line"></hr>
       <div className='section'>
-        <img src="./assets/images/FaceGlitch.gif" alt="" srcset="" />
+      <div className=''>
+          <img src="./assets/images/FaceGlitch.gif" alt="" srcset="" className='show1'/>
+        </div>
+        <div className='pol1'>
+          <h6>"We must build bridges of trust between law enforcement and the public to create a safer society."</h6>
+            <h6><i>John Anderson</i><i>Cheif Police Officer</i></h6>
+        </div>
+        
       </div>
     </div>
   );

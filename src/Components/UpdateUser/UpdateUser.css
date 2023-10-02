@@ -64,4 +64,18 @@
   .p1{
     color: black;
   }
+  .photo-preview {
+    height: 200px; /* Set the desired height for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Use the full height of the container */
+  }

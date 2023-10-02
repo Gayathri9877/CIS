@@ -156,11 +156,12 @@ const RegistrationPage = () => {
         </div>
         {photo && (
           <div className="photo-preview">
-            <h6>--- Uploaded Photo ---</h6>
-            <img src={URL.createObjectURL(photo)} alt="Uploaded Criminal" />
+            <div className="centered-content">
+              <h6>--- Uploaded Photo ---</h6>
+              <img src={URL.createObjectURL(photo)} alt="Uploaded Criminal" />
+            </div>
           </div>
         )}
-        
         <button onClick={handleRegistration} className="btn" >
           Update
         </button>

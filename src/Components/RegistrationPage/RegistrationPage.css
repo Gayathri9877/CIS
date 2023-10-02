@@ -67,3 +67,18 @@ input:focus {
 .footer {
   flex: 0; 
 }
+.photo-preview {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%; 
+}
