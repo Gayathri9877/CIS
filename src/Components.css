@@ -103,8 +103,10 @@
     .Investigation-content{
         font-size: 18px;
         color: black;
-        line-height: 12px;
-       
+        line-height: 25px;
+        text-align: justify;
+        margin-right: 240px;
+
 
     }
 
@@ -113,7 +115,7 @@
 .search-options-police {
   text-align: center;
   margin: 20px;
-  margin-left: 600px;
+  margin-left: 525px;
 }
 
 label {
@@ -130,8 +132,6 @@ select {
   border-radius: 4px;
 }
 
-
-/* Add any additional styling you need here */
 
 
       /*SearchButton.css*/

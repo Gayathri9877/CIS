@@ -47,6 +47,8 @@
   align-items: flex-start;
   padding: 10px; 
   box-sizing: border-box; 
+  margin-top: 0px;
+  margin-left: -30px;
 }
 
 .FaceRecognition-image {
@@ -56,10 +58,11 @@
   display: flex;
   justify-content: flex-end; 
   align-items: center; 
-  margin-top: 0px;
+  margin-top: 70px;
   margin-right: 50%;
-  width: 700px;
-  height: 700px;
+  margin-left: 150px;
+  width: 500px;
+  height: 500px;
 }
 
 .Search-content{
@@ -97,16 +100,18 @@
   padding: 10px; 
   box-sizing: border-box; 
   margin-left: -200px;
+  margin-top: -25px;
 }
 
 .Biometrics-investigation{
     margin-top: 0px;
-    margin-left: 80px;
+    margin-left: 83px;
+    margin-right: 100px;
 }
 
 .Biometrics-options{
   margin-top: 20px;
-  margin-left: -15px;
+  margin-left: 198px;
   margin-bottom: -10px;
 }
 
