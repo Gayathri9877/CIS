@@ -28,7 +28,6 @@ export default function SystemHome() {
 
   return (
     <div className="system-home">
-      
       <div className="photo-box">
         <SimpleImageSlider
           width={'90%'}
@@ -56,9 +55,9 @@ export default function SystemHome() {
         </div>
       </div>
       <h2 className='title'>Our Department</h2>
-      <hr class="styled-line"></hr>
+      <hr className="styled-line"></hr>
       <div className='section'>
-      <div className=''>
+        <div className=''>
           <img src="./assets/images/officer2.jpg" alt="" srcset="" className='show1'/>
         </div>
         <div className='pol1'>
@@ -68,107 +67,107 @@ export default function SystemHome() {
             <br />
             <i>Cheif Police Officer</i>
           </p>
-          </div>
-        </div> 
+        </div>
+      </div> 
 
-        <div className='section2'>
-      
+      <div className='section2'>
         <div className='pol2'>
           <h6>"In the pursuit of justice, we navigate the darkest corners of society."</h6>
           <p className='po2'>
-            <i>Jude Robinson </i>
+            <i>Jude Robinson</i>
             <br />
             <i>Cheif Criminal Office</i>
           </p>
-          </div>
-          <div className=''>
-            <img src="./assets/images/officer1.jpg" alt="" srcset="" className='show1'/>
-          </div>
-        </div> 
-
-        <div className="stations">
-          <div className="stat">
-            <img src="./assets/images/station1.jpg" alt="police-satation" />
-            <p className='dep'>Police Office</p>
-          </div>
-          <div className="stat">
-            <img src="./assets/images/station2.jpg" alt="criminal-department" />
-            <p className='dep'>Criminal Department</p>
-          </div>
-          <div className="stat">
-            <img src="./assets/images/station3.jpg" alt="IT-department" />
-            <p className='dep'>IT Department</p>
-          </div>
-          
         </div>
-         <div className="see-buttons">
-            <button className="learn-more-button" >
-              See more
-            </button>
-          </div>
-          <h2 className='title'>Our Statistics Overview</h2>
-          <hr class="styled-line"></hr>
-          <div className='details'>       
-            <div class="navy-box">
-              <h1>1.5K</h1><br/><h3>Police Stations</h3><br/><p><i>Present</i></p>
-            </div>
-            <div class="navy-box">
-              <h1>500</h1><br/><h3>Police Station branches</h3><br/><p><i>Present</i></p>
-            </div>
-            <div class="navy-box">
-              <h1>15K</h1><br/><h3>Police Officers</h3><br/><p><i>Present</i></p>
-            </div>
-          </div>
-          <div className='details'>       
-            <div class="navy-box">
-              <h1>1.5K</h1><br/><h3>Recorded Crimes </h3><br/><p><i>Per Year</i></p>
-            </div>
-            <div class="navy-box">
-              <h1>1.5K</h1><br/><h3>Arrested Criminals</h3><br/><p><i>Per Year</i></p>
-            </div>
-            <div class="navy-box">
-              <h1>1.5K</h1><br/><h3>Affected Victims </h3><br/><p><i>Per Year</i></p>
-            </div>
-          </div>
-          <br/>
-          <br/>
-          <h2 className='title'>Our Services</h2>
-          <hr class="styled-line"></hr>
-          <div className='finalsub'>
-            <div className='imgIcon'>
-              <img src="./assets/images/criminal.png" alt="criminal" className="icon-image" />
-            </div>
-            <div className='desc2'><h5>Criminal & Crime Data Management</h5></div>
-            <div className='moredetails'>
-              <button className="learn-more-button">
-                More Details
-              </button>
-            </div>
-          </div>
+        <div className=''>
+          <img src="./assets/images/officer1.jpg" alt="" srcset="" className='show1'/>
+        </div>
+      </div> 
 
-          <div className='finalsub'>
-            <div className='imgIcon'>
-              <img src="./assets/images/face-recognition.png" alt="criminal" className="icon-image" />
-            </div>
-            <div className='desc2'><h5>Face Recognition Technology</h5></div>
-            <div className='moredetails'>
-              <button className="learn-more-button">
-                More Details
-              </button>
-            </div>
-          </div>
-          <div className='finalsub'>
-            <div className='imgIcon'>
-              <img src="./assets/images/smartphone.png" alt="criminal" className="icon-image" />
-            </div>
-            <div className='desc2'><h5>Location Tracking</h5></div>
-            <div className='moredetails'>
-              <button className="learn-more-button">
-                More Details
-              </button>
-            </div>
-          </div>
+      <div className="stations">
+        <div className="stat">
+          <img src="./assets/images/station1.jpg" alt="police-station" />
+          <p className='dep'>Police Office</p>
+        </div>
+        <div className="stat">
+          <img src="./assets/images/station2.jpg" alt="criminal-department" />
+          <p className='dep'>Criminal Department</p>
+        </div>
+        <div className="stat">
+          <img src="./assets/images/station3.jpg" alt="IT-department" />
+          <p className='dep'>IT Department</p>
+        </div>
       </div>
-    
+
+      <div className="see-buttons">
+        <button className="learn-more-button">
+          See more
+        </button>
+      </div>
+
+      <h2 className='title'>Our Statistics Overview</h2>
+      <hr className="styled-line"></hr>
+      <div className='details'>       
+        <div className="navy-box">
+          <h1>1.5K</h1><br/><h3>Police Stations</h3><br/><p><i>Present</i></p>
+        </div>
+        <div className="navy-box">
+          <h1>500</h1><br/><h3>Police Station branches</h3><br/><p><i>Present</i></p>
+        </div>
+        <div className="navy-box">
+          <h1>15K</h1><br/><h3>Police Officers</h3><br/><p><i>Present</i></p>
+        </div>
+      </div>
+      <div className='details'>       
+        <div className="navy-box">
+          <h1>1.5K</h1><br/><h3>Recorded Crimes</h3><br/><p><i>Per Year</i></p>
+        </div>
+        <div className="navy-box">
+          <h1>1.5K</h1><br/><h3>Arrested Criminals</h3><br/><p><i>Per Year</i></p>
+        </div>
+        <div className="navy-box">
+          <h1>1.5K</h1><br/><h3>Affected Victims</h3><br/><p><i>Per Year</i></p>
+        </div>
+      </div>
+      <br/><br/>
+
+      <h2 className='title'>Our Services</h2>
+      <hr className="styled-line"></hr>
+      <div className='finalsub'>
+        <div className='imgIcon'>
+          <img src="./assets/images/criminal.png" alt="criminal" className="icon-image" />
+        </div>
+        <div className='desc2'><h5>Criminal & Crime Data Management</h5></div>
+        <div className='moredetails'>
+          <button className="learn-more-button">
+            More Details
+          </button>
+        </div>
+      </div>
+
+      <div className='finalsub'>
+        <div className='imgIcon'>
+          <img src="./assets/images/face-recognition.png" alt="criminal" className="icon-image" />
+        </div>
+        <div className='desc2'><h5>Face Recognition Technology</h5></div>
+        <div className='moredetails'>
+          <button className="learn-more-button">
+            More Details
+          </button>
+        </div>
+      </div>
+      <div className='finalsub'>
+        <div className='imgIcon'>
+          <img src="./assets/images/smartphone.png" alt="criminal" className="icon-image" />
+        </div>
+        <div className='desc2'><h5>Location Tracking</h5></div>
+        <div className='moredetails'>
+          <button className="learn-more-button">
+            More Details
+          </button>
+        </div>
+      </div>
+      <br/><br/>
+    </div>
   );
 }
