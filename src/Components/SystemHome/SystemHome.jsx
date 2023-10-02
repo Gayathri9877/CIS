@@ -108,7 +108,66 @@ export default function SystemHome() {
           </div>
           <h2 className='title'>Our Statistics Overview</h2>
           <hr class="styled-line"></hr>
-        
+          <div className='details'>       
+            <div class="navy-box">
+              <h1>1.5K</h1><br/><h3>Police Stations</h3><br/><p><i>Present</i></p>
+            </div>
+            <div class="navy-box">
+              <h1>500</h1><br/><h3>Police Station branches</h3><br/><p><i>Present</i></p>
+            </div>
+            <div class="navy-box">
+              <h1>15K</h1><br/><h3>Police Officers</h3><br/><p><i>Present</i></p>
+            </div>
+          </div>
+          <div className='details'>       
+            <div class="navy-box">
+              <h1>1.5K</h1><br/><h3>Recorded Crimes </h3><br/><p><i>Per Year</i></p>
+            </div>
+            <div class="navy-box">
+              <h1>1.5K</h1><br/><h3>Arrested Criminals</h3><br/><p><i>Per Year</i></p>
+            </div>
+            <div class="navy-box">
+              <h1>1.5K</h1><br/><h3>Affected Victims </h3><br/><p><i>Per Year</i></p>
+            </div>
+          </div>
+          <br/>
+          <br/>
+          <h2 className='title'>Our Services</h2>
+          <hr class="styled-line"></hr>
+          <div className='finalsub'>
+            <div className='imgIcon'>
+              <img src="./assets/images/criminal.png" alt="criminal" className="icon-image" />
+            </div>
+            <div className='desc2'><h5>Criminal & Crime Data Management</h5></div>
+            <div className='moredetails'>
+              <button className="learn-more-button">
+                More Details
+              </button>
+            </div>
+          </div>
+
+          <div className='finalsub'>
+            <div className='imgIcon'>
+              <img src="./assets/images/face-recognition.png" alt="criminal" className="icon-image" />
+            </div>
+            <div className='desc2'><h5>Face Recognition Technology</h5></div>
+            <div className='moredetails'>
+              <button className="learn-more-button">
+                More Details
+              </button>
+            </div>
+          </div>
+          <div className='finalsub'>
+            <div className='imgIcon'>
+              <img src="./assets/images/smartphone.png" alt="criminal" className="icon-image" />
+            </div>
+            <div className='desc2'><h5>Location Tracking</h5></div>
+            <div className='moredetails'>
+              <button className="learn-more-button">
+                More Details
+              </button>
+            </div>
+          </div>
       </div>
     
   );
