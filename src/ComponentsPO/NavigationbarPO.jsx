@@ -26,6 +26,7 @@ const NavigationBarPO = () => {
     '/UpdateVictimFull',
     '/UpdateCriminalSuspectFull',
     '/UpdateExistingFull',
+    '/SignInGeneral',
     
     // Add more paths as needed
   ];

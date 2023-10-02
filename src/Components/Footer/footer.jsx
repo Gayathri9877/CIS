@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { useLocation } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -7,6 +8,23 @@ const Footer = () => {
   const openSocialLink = (url) => {
     window.open(url, '_blank'); 
   };
+
+
+  const location = useLocation();
+  const hideNavBarOnPaths = [
+ 
+    '/SignInGeneral',
+    
+    // Add more paths as needed
+  ];
+
+  // Check if the current path is in the list of paths to hide the navigation bar
+  const shouldHideFooter = hideNavBarOnPaths.includes(location.pathname);
+
+  if (shouldHideFooter) {
+    return null; // Return null to hide the navigation bar
+  }
+
 
   return (
     <footer className="footer ">

@@ -402,7 +402,7 @@ const UpdateCriminalSuspect = () => {
               onChange={(e) => setDescription(e.target.value)}
               onKeyPress={handleEnterKey} 
             />
-           
+            
           </div>
         </div>
       )}

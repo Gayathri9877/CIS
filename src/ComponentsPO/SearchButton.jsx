@@ -2,15 +2,15 @@ import React from 'react';
 import {Link } from "react-router-dom";
 import '../Components.css';
 
-function SearchButton({ handleSearch }) {
+function SearchButtonPO({ handleSearch }) {
   return (
    <Link to="/SearchResult">
-    <button className="search-button" onClick={handleSearch}>
+    <button className="search-button-PO" onClick={handleSearch}>
       Search
     </button>
     </Link>
   );
 }
 
-export default SearchButton;
+export default SearchButtonPO;
 

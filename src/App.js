@@ -29,10 +29,7 @@ import Evidences from './PagesPO/Evidences';
 import Reports from './PagesPO/Reports';
 import Support from './PagesPO/Support';
 import ReportResponse from './PagesPO/ReportResponse';
-import HomeGeneral from './GeneralPages/HomeGeneral';
-import Help from './GeneralPages/Help';
-import News from './GeneralPages/News';
-import Contact from './GeneralPages/Contact';
+import SignInGeneral from './GeneralPages/SignInGeneral';
 import NavigationBarPO from './ComponentsPO/NavigationbarPO';
 import Footer from './Components/Footer/footer';
 
@@ -73,10 +70,7 @@ function App() {
           <Route path="/Reports" element={<Reports/>} /> 
           <Route path="/Support" element={<Support/>} />
           <Route path="/ReportResponse" element={<ReportResponse/>} />
-          <Route path="/HomeGeneral" element={<HomeGeneral/>} />
-          <Route path="/Help" element={<Help/>} />
-          <Route path="/News" element={<News/>} />
-          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/SignInGeneral" element={<SignInGeneral/>} />
         </Routes>
         <footer >
           <Footer/>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Investigation from "../ComponentsPO/Investigation";
 import OptionsPO from "../ComponentsPO/OptionsPO";
 import BiometricsButtons from '../ComponentsPO/BiometricsButtons';
-import SearchButton from "../ComponentsPO/SearchButton";
+import SearchButtonPO from "../ComponentsPO/SearchButton";
 import '../Styles.css';
 
 function SearchBiometrics() {
@@ -34,10 +34,13 @@ function SearchBiometrics() {
         </div>
       )}
       <div className='Biometrics-searchbutton'>
-        <SearchButton/>
+        <SearchButtonPO/>
       </div>
     </div>
   );
 }
 
 export default SearchBiometrics;
+
+
+
