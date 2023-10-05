@@ -1,11 +1,16 @@
 import React from 'react';
 import '../Components.css'; 
-import manresult from '../Assets/man.png';
 
-const Circle = () => {
-  return <div className="circle">
-    <img src={manresult} alt="Profile" className="Criminal-picture" />
-  </div>;
+const Circle = ({ profilePhotoUrl }) => {
+  return (
+    <div className="circle">
+      {profilePhotoUrl ? (
+        <img className='profile-userside' src={profilePhotoUrl} alt="Profile" />
+      ) : (
+        <p className='no-photo-police'>not added</p>
+      )}
+    </div>
+  );
 };
 
 export default Circle;

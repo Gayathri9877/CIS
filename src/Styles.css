@@ -175,7 +175,7 @@
 /*SearchResult.css*/
 
 .Searchresult-container{
-  height: 170vh;
+  height: auto;
   width: 100%;
 }
 
@@ -187,7 +187,7 @@
 
 .crimecontainer{
   width: 100%;
-  height: 170vh;
+  height: auto;
 }
 
 .tablecrime{
@@ -198,7 +198,7 @@
 
 .Victims-container{
   width: 100%;
-  height: 120vh;
+  height: auto;
 }
 
 .tv{
@@ -209,7 +209,7 @@
 
 .Evidences-container{
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .te{
