@@ -5,13 +5,13 @@ const Rectangle = () => {
     <div
       style={{
         position: 'absolute',
-        width: '1322px',
-        height: '40px',
+        width: '1325px',
+        height: '30px',
         left: '1px',
         top: '180px',
         background: '#000066',
-        marginLeft: '212px',
-        marginTop: '18px',
+        marginLeft: '206px',
+        marginTop: '5px',
       }}
     ></div>
   );

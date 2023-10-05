@@ -10,7 +10,7 @@ function Crime() {
     <div className='crimecontainer'>
       <div className='namecrime'><Name/></div> 
        <div><SubNavigationbar/></div>
-       <div><Sidebar/></div> 
+       <div className='sidebar-police-crime'><Sidebar/></div> 
         <div className='tablecrime'><TableCrime/></div>
       </div>
   );
