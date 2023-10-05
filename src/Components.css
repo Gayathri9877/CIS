@@ -600,3 +600,65 @@ select {
 }
 
 
+/*CriminalPolice.css*/
+
+.body {
+  font-family: Arial, sans-serif; 
+  font-size: 16px; 
+}
+.registration-container-police {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  width: 70%;
+  height:auto;
+  margin-top: -300px;
+}
+
+.registration-form-police {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color:white;
+  padding: 2rem;
+  border-radius: 0px;
+  box-sizing: border-box;
+
+}
+
+.input-container-police {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; 
+}
+
+.label-police {
+  
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.p1-police{
+  color: black;
+  font-weight: bold;
+}
+
+.input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0px;
+  width: 100%;
+  background-color: #dfe1fc;
+  transition: background-color 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #e0e1fc;
+}
+
+
