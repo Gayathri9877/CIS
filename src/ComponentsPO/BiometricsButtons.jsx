@@ -23,10 +23,6 @@ const BiometricsButtons = ({ onFileUpload }) => {
     }
   };
 
-  const handleRemovePhoto = () => {
-    setSelectedFile(null);
-  };
-
   return (
     <div className="biometrics-buttons">
       <button className="button button-scan-face" onClick={handleScanFace}>
@@ -36,17 +32,6 @@ const BiometricsButtons = ({ onFileUpload }) => {
       <button className="button button-upload-photo" onClick={handleUploadPhoto}>
         Upload photo
       </button>
-
-      {selectedFile && (
-        <div>
-          <img
-            src={URL.createObjectURL(selectedFile)}
-            alt="Uploaded"
-            style={{ maxWidth: '100px', maxHeight: '100px' }}
-          />
-          <button onClick={handleRemovePhoto}>Remove Photo</button>
-        </div>
-      )}
 
       {/* Hidden file input */}
       <input

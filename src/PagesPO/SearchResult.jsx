@@ -3,9 +3,8 @@ import '../Styles.css';
 import Circle from '../ComponentsPO/CriminalPhoto';
 import Name from '../ComponentsPO/Name';
 import Rectangle from '../ComponentsPO/Rectangle';
-import CapturesButton from '../ComponentsPO/CapturesButton';
 import Sidebar from '../ComponentsPO/Sidebar';
-import Table1 from '../ComponentsPO/Table1';
+import CriminalPolice from '../ComponentsPO/CriminalPolice';
 
 function SearchResult() {
   return (
@@ -14,9 +13,8 @@ function SearchResult() {
        <Rectangle/>
        <div className='sr'>
        <Name/>
-       <CapturesButton/>
        <Sidebar/>
-       <Table1/>
+       <CriminalPolice/>
        </div>
       </div>
   );

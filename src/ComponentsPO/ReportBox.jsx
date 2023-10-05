@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import '../Components.css';
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function ReportBox() {
   const [selectedSearchOption, setSelectedSearchOption] = useState('Criminal ID');
-
   const [searchValue, setSearchValue] = useState('');
 
   const handleSearchOptionChange = (event) => {
@@ -16,51 +15,56 @@ function ReportBox() {
   };
 
   const handleSearch = () => {
- 
     console.log(`Searching for ${selectedSearchOption}: ${searchValue}`);
   };
 
   return (
-    <div >
+    <div>
       <div className="Report-options-PO">
-  <label>
-  <input
-    type="radio"
-    value="Criminal ID"
-    checked={selectedSearchOption === 'Criminal ID'}
-    onChange={handleSearchOptionChange}
-  />
-  Criminal ID
-</label>
-<p className='ab-PO'>If you need included all crimes click here</p>
-
-<label>
-  <input
-    type="radio"
-    value="Crime ID"
-    checked={selectedSearchOption === 'Crime ID'}
-    onChange={handleSearchOptionChange}
-  />
-  Crime ID
-</label>
-<p className='ab-PO'>If you need a report for one crime click here</p>
-
-</div>
+      <label className='radio-po-label1'>Criminal ID</label>
+          <input
+            id='Criminal ID'
+            type="radio"
+            value="Criminal ID"
+            className='radio-police'
+            checked={selectedSearchOption === 'Criminal ID'}
+            onChange={handleSearchOptionChange}
+          />
+          
+    
+       
+        <p className='ab-PO'>If you need included all crimes click here</p>
+        
+        <label className='radio-po-label2'>Crime ID</label>
+          <input
+            id='Crime ID'
+            type="radio"
+            value="Crime ID"
+            className='radio-police'
+            checked={selectedSearchOption === 'Crime ID'}
+            onChange={handleSearchOptionChange}
+          />
+          
+       
+      
+        <p className='ab-PO'>If you need a report for one crime click here</p>
+      </div>
 
       <div className="Request-box-PO">
         <input
           type="text"
-          placeholder="  Type ID here"
+          placeholder="Type ID here"
           className="Request-input-PO"
           value={searchValue}
           onChange={handleSearchValueChange}
         />
-        </div>
-        <Link to="/ReportResponse">
+      </div>
+
+      <Link to="/ReportResponse">
         <button className="Request-button-PO" onClick={handleSearch}>
-         Send Request
+          Send Request
         </button>
-        </Link>
+      </Link>
     </div>
   );
 }

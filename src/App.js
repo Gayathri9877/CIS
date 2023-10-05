@@ -23,7 +23,6 @@ import Search from './PagesPO/Search';
 import SearchBiometrics from './PagesPO/SearchBiometrics';
 import SearchResult from './PagesPO/SearchResult';
 import Victims from './PagesPO/Victims';
-import Captures from './PagesPO/Captures';
 import Crime from './PagesPO/Crime';
 import Evidences from './PagesPO/Evidences';
 import Reports from './PagesPO/Reports';
@@ -64,7 +63,6 @@ function App() {
           <Route path="/SearchBiometrics" element={<SearchBiometrics/>} />
           <Route path="/SearchResult" element={<SearchResult/>} />
           <Route path="/Victims" element={<Victims/>} />
-          <Route path="/Captures" element={<Captures/>} />
           <Route path="/Crime" element={<Crime/>} />
           <Route path="/Evidences" element={<Evidences/>} />
           <Route path="/Reports" element={<Reports/>} /> 

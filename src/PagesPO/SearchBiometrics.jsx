@@ -23,6 +23,7 @@ function SearchBiometrics() {
       <div className='Biometrics-buttons'>
         <BiometricsButtons onFileUpload={handleFileUpload} />
       </div>
+      <div className="Biometrics-photo-box">
       {uploadedFile && (
         <div>
           <img
@@ -33,6 +34,7 @@ function SearchBiometrics() {
           <button onClick={() => setUploadedFile(null)}>Remove Photo</button>
         </div>
       )}
+      </div>
       <div className='Biometrics-searchbutton'>
         <SearchButtonPO/>
       </div>
