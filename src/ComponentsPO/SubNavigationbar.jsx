@@ -20,14 +20,6 @@ const SubNavigationbar = () => {
 
   return (
     <div className="sub-navigation">
-      <div className="left-section">
-        <div
-          className={`crime-id-box ${activeTab === 'Crime ID' ? 'active' : ''}`}
-          onClick={() => handleTabClick('Crime ID')}
-        >
-          Crime ID - ....
-        </div>
-      </div>
       <div className="right-section">
        <div
           className={`nav-item-box ${activeTab === 'Crime' ? 'active' : ''}`}

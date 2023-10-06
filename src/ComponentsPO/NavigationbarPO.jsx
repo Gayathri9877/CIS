@@ -1,42 +1,11 @@
 import React from 'react';
 import '../Components.css'; 
-import { useLocation } from 'react-router-dom';
 import fingerprint from '../Assets/finger-print.png';
 import man from '../Assets/man.png';
 
 
 const NavigationBarPO = () => {
 
-  const location = useLocation();
-  const hideNavBarOnPaths = [
-    '/', // Add paths where you want to hide the navigation bar
-    '/ITOfficer',
-    '/RegistrationPage',
-    '/FullUserdetails',
-    '/UpdateUserDetails',
-    '/UserPersona',
-    '/FullUserPersona',
-    '/Suspect',
-    '/Registercrimefull',
-    '/RegisterVictimfull',
-    '/RegisterEvidencefull',
-    '/FullUpdateEvidence',
-    '/FullRegisterCriminalSuspect',
-    '/UpdateCrimeFull',
-    '/UpdateVictimFull',
-    '/UpdateCriminalSuspectFull',
-    '/UpdateExistingFull',
-    '/SignInGeneral',
-    
-    // Add more paths as needed
-  ];
-
-  // Check if the current path is in the list of paths to hide the navigation bar
-  const shouldHideNavBar = hideNavBarOnPaths.includes(location.pathname);
-
-  if (shouldHideNavBar) {
-    return null; // Return null to hide the navigation bar
-  }
 
   return (
     <nav className="navbar">

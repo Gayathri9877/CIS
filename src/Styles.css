@@ -191,7 +191,15 @@
 }
 
 .tablecrime{
-  margin-top: 160px;
+  margin-top: 320px;
+}
+
+.namecrime{
+  margin-top: -20px;
+}
+
+.sidebar-police-crime{
+  margin-top: -130px;
 }
 
 /*Victims.css*/
@@ -202,8 +210,10 @@
 }
 
 .tv{
-  margin-top: 160px;
+  margin-top: 300px;
 }
+
+
 
 /*Evidences.css*/
 
@@ -213,5 +223,5 @@
 }
 
 .te{
-  margin-top: 160px;
+  margin-top: 300px;
 }

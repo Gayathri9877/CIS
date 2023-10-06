@@ -5,9 +5,14 @@ import Name from '../ComponentsPO/Name';
 import Rectangle from '../ComponentsPO/Rectangle';
 import Sidebar from '../ComponentsPO/Sidebar';
 import CriminalPolice from '../ComponentsPO/CriminalPolice';
+import NavigationBarPO from '../ComponentsPO/NavigationbarPO';
 
 function SearchResult() {
   return (
+    <div>
+    <nav>
+    <NavigationBarPO/>
+  </nav>
     <div className='Searchresult-container'>
        <Circle/>
        <Rectangle/>
@@ -16,6 +21,7 @@ function SearchResult() {
        <Sidebar/>
        <CriminalPolice/>
        </div>
+      </div>
       </div>
   );
 

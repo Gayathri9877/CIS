@@ -1,12 +1,13 @@
 import React from 'react';
 import '../Styles.css';
 import imageSrc from '../Assets/welcome_img.png';
+import NavigationBarPO from '../ComponentsPO/NavigationbarPO';
 
 
 function HomePO() {
   const containerStyle = {
     backgroundImage: `url(${imageSrc})`,  
-    backgroundSize: 'cover',              
+    backgroundSize: 'cover',
     backgroundPosition: 'center',        
     backgroundRepeat: 'no-repeat',      
     height: '100vh',                      
@@ -18,6 +19,11 @@ function HomePO() {
     
   };
   return (
+    
+      <div>
+        <nav>
+        <NavigationBarPO/>
+      </nav>
     <div style={containerStyle} className="home-container">
       <div className='welcome-heading'>
       <h1>Welcome</h1>
@@ -28,6 +34,7 @@ function HomePO() {
       <div className='sub-heading2'>
         Sri Lanka Police
       </div>
+    </div>
     </div>
   );
 }

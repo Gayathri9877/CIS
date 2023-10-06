@@ -4,6 +4,8 @@ import OptionsPO from "../ComponentsPO/OptionsPO";
 import BiometricsButtons from '../ComponentsPO/BiometricsButtons';
 import SearchButtonPO from "../ComponentsPO/SearchButton";
 import '../Styles.css';
+import NavigationBarPO from '../ComponentsPO/NavigationbarPO';
+
 
 function SearchBiometrics() {
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -13,6 +15,10 @@ function SearchBiometrics() {
   };
 
   return (
+    <div>
+        <nav>
+        <NavigationBarPO/>
+      </nav>
     <div className="SearchBiometrics-container">
       <div className='Biometrics-investigation'>
         <Investigation/>
@@ -38,6 +44,7 @@ function SearchBiometrics() {
       <div className='Biometrics-searchbutton'>
         <SearchButtonPO/>
       </div>
+    </div>
     </div>
   );
 }

@@ -29,16 +29,17 @@ import Reports from './PagesPO/Reports';
 import Support from './PagesPO/Support';
 import ReportResponse from './PagesPO/ReportResponse';
 import SignInGeneral from './GeneralPages/SignInGeneral';
-import NavigationBarPO from './ComponentsPO/NavigationbarPO';
 import Footer from './Components/Footer/footer';
+
+import NewsandUpdatesFull from './GeneralPages/NewsandUpdatesFull';
+import ContactUSFull from './GeneralPages/ContactUSFull';
+import FAQandHelpFull from './GeneralPages/FAQandHelpFull';
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <nav>
-        <NavigationBarPO/>
-      </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ITofficer" element={<ITOfficer/>}/>
@@ -69,6 +70,11 @@ function App() {
           <Route path="/Support" element={<Support/>} />
           <Route path="/ReportResponse" element={<ReportResponse/>} />
           <Route path="/SignInGeneral" element={<SignInGeneral/>} />
+
+          <Route path="/NewsandUpdatesFull" element={<NewsandUpdatesFull/>}/>
+          <Route path="/ContactUSFull" element={<ContactUSFull/>}/>
+          <Route path="/FAQandHelpFull" element={<FAQandHelpFull/>}/>
+
         </Routes>
         <footer >
           <Footer/>

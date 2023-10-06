@@ -28,10 +28,6 @@
     font-weight: normal;
 }
 
-.SignIn-Button-General{
-   margin-left: 20px;
-    
-}
 
 .form-control{
     border-color: black;
@@ -42,4 +38,31 @@
 .SignIn-remember-me{
     color: black;
     font-weight: normal;
+    margin-right: 63px;
 }
+
+.remember-me-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+
+  .remember-me-checkbox:checked {
+    background:black;
+    border: 2px solid white;
+  }
+
+  .error-message{
+    color: red;
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-top: 5px; /* Add some top margin for spacing */
+  }
+  
+   
+  

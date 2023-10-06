@@ -4,14 +4,20 @@ import Name from '../ComponentsPO/Name';
 import SubNavigationbar from '../ComponentsPO/SubNavigationbar';
 import Sidebar from '../ComponentsPO/Sidebar';
 import TableEvidences from '../ComponentsPO/TableEvidences';
+import NavigationBarPO from '../ComponentsPO/NavigationbarPO';
 
 function Evidences() {
   return (
+    <div>
+    <nav>
+    <NavigationBarPO/>
+  </nav>
     <div className='Evidences-container'>
-       <Name/>
-       <SubNavigationbar/>
-       <Sidebar/>
+       <div className='namecrime'><Name/></div> 
+       <div ><SubNavigationbar/></div>
+       <div className='sidebar-police-crime'><Sidebar/></div> 
        <div className='te'><TableEvidences/></div>
+      </div>
       </div>
   );
 
