@@ -1,8 +1,12 @@
 import React from 'react';
+import './ContactUS.css';
 
 function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <div className='ContactUs-container'>
+        <h1 className='Maintopic-general-PO'>CONTACT US</h1>
+        <div></div>
+    </div>
   );
 };
 

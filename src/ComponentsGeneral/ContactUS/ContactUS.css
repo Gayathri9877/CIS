@@ -1,0 +1,17 @@
+.ContactUs-container{
+    width:100%;
+    height: auto;
+    display: flex;
+}
+
+.Maintopic-general-PO{
+    color: #000066;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3% 0 0 100px;
+}
+
+.Line{
+   
+}
