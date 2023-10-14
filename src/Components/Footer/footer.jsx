@@ -13,7 +13,10 @@ const Footer = () => {
   const location = useLocation();
   const hideNavBarOnPaths = [
  
-    '/SignInGeneral',
+    '/LoginGeneralFull',
+    '/FogotPasswordFull',
+    '/ResetPasswordFull',
+    '/VerificationCodeFull',
     
     // Add more paths as needed
   ];

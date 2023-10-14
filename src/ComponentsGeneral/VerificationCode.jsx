@@ -45,7 +45,7 @@ function VerificationCode() {
   };
 
   return (
-    <div className="container p-3 component-container-30p">
+    <div className="container p-3 component-container-general-30p">
       <div className="row my-4">
         <div className="col">
           <p className="fs-2">Enter 4 Digit Code</p>

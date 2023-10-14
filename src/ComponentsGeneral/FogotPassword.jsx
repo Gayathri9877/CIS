@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../ComponentsGeneral.css';
 
+
 function ForgotPassword() {
   const [deliveryMethod, setDeliveryMethod] = useState('email');
   const [deliveryData, setDeliveryData] = useState('');
