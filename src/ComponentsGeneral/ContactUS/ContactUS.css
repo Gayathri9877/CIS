@@ -95,7 +95,7 @@
     padding: 7px;
     outline: none;
     border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
+    border: 1px solid gray;
   }
   
   .input-contact:focus {
@@ -111,7 +111,8 @@
     padding: 7px;
     outline: none;
     border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
+    border: 1px solid gray;
+    background-color: #E0E1FC;
   }
   
   .textarea-contact:focus {
@@ -120,6 +121,8 @@
   
   .label-contact {
     margin-top: 1rem;
+    color: black;
+    font-weight: normal;
   }
   
   .input-contact[type="submit"] {

@@ -35,7 +35,7 @@ const Contact = () => {
         <input className="input-contact" type="text" name="user_name" />
         <label className="label-contact" >Email</label>
         <input className="input-contact" type="email" name="user_email" />
-        <label className="label-contact" >Message</label>
+        <label className="label-contact" >Comment</label>
         <textarea className="textarea-contact" name="message" />
         <input className="input-contact" type="submit" value="Send" />
       </form>
