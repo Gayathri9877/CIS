@@ -28,12 +28,15 @@ import Evidences from './PagesPO/Evidences';
 import Reports from './PagesPO/Reports';
 import Support from './PagesPO/Support';
 import ReportResponse from './PagesPO/ReportResponse';
-import SignInGeneral from './GeneralPages/SignInGeneral';
 import Footer from './Components/Footer/footer';
 
 import NewsandUpdatesFull from './GeneralPages/NewsandUpdatesFull';
 import ContactUSFull from './GeneralPages/ContactUSFull';
 import FAQandHelpFull from './GeneralPages/FAQandHelpFull';
+import LoginGeneralFull from './GeneralPages/LoginGeneralFull';
+import FogotPasswordFull from './GeneralPages/FogotPasswordFull';
+import ResetPasswordFull from './GeneralPages/ResetPasswordFull';
+import VerificationCodeFull from './GeneralPages/VerificationCodeFull';
 
 
 function App() {
@@ -69,11 +72,14 @@ function App() {
           <Route path="/Reports" element={<Reports/>} /> 
           <Route path="/Support" element={<Support/>} />
           <Route path="/ReportResponse" element={<ReportResponse/>} />
-          <Route path="/SignInGeneral" element={<SignInGeneral/>} />
 
           <Route path="/NewsandUpdatesFull" element={<NewsandUpdatesFull/>}/>
           <Route path="/ContactUSFull" element={<ContactUSFull/>}/>
           <Route path="/FAQandHelpFull" element={<FAQandHelpFull/>}/>
+          <Route path="/LoginGeneralFull" element={<LoginGeneralFull/>} />
+          <Route path="/FogotPasswordFull" element={<FogotPasswordFull/>} />
+          <Route path="/ResetPasswordFull" element={<ResetPasswordFull/>} />
+          <Route path="/VerificationCodeFull" element={<VerificationCodeFull/>} />
 
         </Routes>
         <footer >
