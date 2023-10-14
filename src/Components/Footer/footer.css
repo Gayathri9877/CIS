@@ -9,21 +9,20 @@
     border-radius: 20px 20px 0 0;
     width: 100%;
     bottom: 0;
-
-    margin-top: auto; 
+    margin-top:20px; 
     }
   .text01{
     
     font-size: xx-large;
     color: #000066;
     margin-top:20px ;
-    font-weight: bold !}
+    font-weight: bold }
 
   
   .column {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   
   .icon {
@@ -39,6 +38,7 @@
   .title {
     font-weight: bold;
     margin-bottom: 10px;
+    
   }
   
   .link,
