@@ -73,71 +73,65 @@
   margin-left: -1000px;
 }
 
-.label {
-    position: absolute;
-    width: 45px;
-    height: 19px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.response-styles-contactus{
+    margin-top: 920px;
+    margin-left: -460px;
+    margin-bottom: 50px;
+}
+
+
+/* comment.css */
+  .form-contact {
     display: flex;
-    align-items: center;
-    color: #000000;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
   }
   
-
-.input, .textarea-askqueries {
-    box-sizing: border-box;
-    position: absolute;
-    width: 696px;
-    height: 100px;
-    left: 100px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    background: #FFFFFF;
-    border: 1px solid #000000;
+  .input-contact {
+    width: 100%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
   }
-
-  .send-button-askqueries {
-    position: absolute;
-    width: 696px;
-    height: 45px;
-    background: #000066;
-    border: 1px solid #FFFFFF;
-    border-radius: 8px;
-    top: 1203px;
-    color: #FFFFFF;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  
+  .input-contact:focus {
+    border: 2px solid black;
+  }
+  
+  .textarea-contact {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+  }
+  
+  .textarea-contact:focus {
+    border: 2px solid black;
+  }
+  
+  .label-contact {
+    margin-top: 1rem;
+  }
+  
+  .input-contact[type="submit"] {
+    margin-top: 2rem;
     cursor: pointer;
+    background: #000066;
+    color: white;
+    border: none;
   }
-
-  .response-message-askqueries {
-    position: absolute;
-    width: 715px;
-    height: 54px;
-    left: 240px;
-    top: 1269px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 27px;
-    line-height: 33px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
+  
+.comment-container{
+    margin-top: 500px;
+    margin-left: -950px;
+    width: 600px;
+}

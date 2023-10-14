@@ -4,10 +4,11 @@ import LocationImage from '../../Assets/location.png';
 import PhoneImage from '../../Assets/phone.png';
 import EmailImage from '../../Assets/email.png';
 import MapImage from '../../Assets/map.png';
+import Contact from './Comment';
 
 function ContactUS() {
   return (
-    <div className='ContactUs-container'>
+    <div className='ContactUs-container' style={{left: '0'}}>
         <div className='Contact-topic-container'>
         <h1 className='Maintopic-general-PO'>CONTACT US</h1>
         <div className='topic-line'></div>
@@ -33,24 +34,11 @@ function ContactUS() {
         <h2 className='Maintopic-general-PO'>ASK QUERIES</h2>
         <div className='topic-line'></div>
         </div>
-
-      <div className='askqueries-message-container'>
-        <div>
-          <label htmlFor="name" className="label-askqueries">Name</label>
-          <input type="text" id="name" className="input-askqueries" />
+      <Contact/>
+        <div className='response-styles-contactus'>
+       <p style={{fontFamily: 'Arial, Helvetica, sans-serif', fontStyle: 'normal', fontSize: '16px', color: '#000000'}}>Response will send to your respective email</p>
         </div>
-        <div>
-          <label htmlFor="email" className="label-askqueries">Email</label>
-          <input type="text" id="email" className="input-askqueries" />
-        </div>
-        <div>
-          <label htmlFor="comments" className="label-askqueries">Comments</label>
-          <textarea id="comments" className="textarea-askqueries" rows="4"></textarea>
-        </div>
-        <button className="send-button-askqueries">Send</button>
-        <div className="response-message-askqueries">Response will be sent to your respective email.</div>
-      </div>
-
+         
     </div>
   );
 };
