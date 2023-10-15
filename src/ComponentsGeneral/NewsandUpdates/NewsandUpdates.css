@@ -14,13 +14,11 @@
     width: 80%;
     align-items: center;
     height: auto;
-    border: 1px solid black;
     margin-left: 150px;
     margin-top: 50px;
 }
 
 .fac-readmore-one{
-    display: flex;
     align-items: center;
     width: 48%;
     height: auto;
@@ -30,13 +28,12 @@
 
 .fac-image{
     overflow: hidden;
-    width: px;
+    width: 100%;
     height: auto;
     margin-left: 50px;
 }
 
 .fac-readmore-two{
-    display: flex;
     align-items: center;
     width: 48%;
     height: auto;
@@ -44,3 +41,56 @@
     margin-left: 60px;
 }
 
+.second-announce-container{
+    display: block;
+    width: 75%;
+    align-items: center;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.sac-image{
+    width: 35%;
+}
+
+.sac-readmore{
+    border: 1px solid black;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.third-announce-container{
+    display: flex;
+    width: 83%;
+    align-items: center;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.tac-clickhere{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 40px;
+    background-color: #D9D9D9;
+}
+
+.tac-image{
+    width: 80%;
+    margin-top: 37px;
+    margin-left: 37px;
+    margin-bottom: 37px;
+}
+
+.clickhere-tac{
+    width: 150px;
+    height: 40px;
+    background-color: #000066;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: white;
+    margin-left: 112px;
+    margin-bottom: 30px;
+}
