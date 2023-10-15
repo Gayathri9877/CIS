@@ -38,8 +38,6 @@ import FogotPasswordFull from './GeneralPages/FogotPasswordFull';
 import ResetPasswordFull from './GeneralPages/ResetPasswordFull';
 import VerificationCodeFull from './GeneralPages/VerificationCodeFull';
 
-import SeeMoreBox from './ComponentsGeneral/NewsandUpdates/SeeMore';
-
 
 function App() {
   return (
@@ -83,7 +81,6 @@ function App() {
           <Route path="/ResetPasswordFull" element={<ResetPasswordFull/>} />
           <Route path="/VerificationCodeFull" element={<VerificationCodeFull/>} />
 
-          <Route path="/SeeMoreBox" element={<SeeMoreBox/>} />
 
 
         </Routes>

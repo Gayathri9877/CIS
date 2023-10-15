@@ -9,5 +9,38 @@
     margin-bottom: 60px;
 }
 
+.first-announce-container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    height: auto;
+    border: 1px solid black;
+    margin-left: 150px;
+    margin-top: 50px;
+}
 
-/*SeeMore.css*/
+.fac-readmore-one{
+    display: flex;
+    align-items: center;
+    width: 48%;
+    height: auto;
+    border: 1px solid black;
+    padding-right: 4rem;
+}
+
+.fac-image{
+    overflow: hidden;
+    width: px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.fac-readmore-two{
+    display: flex;
+    align-items: center;
+    width: 48%;
+    height: auto;
+    border: 1px solid black;
+    margin-left: 60px;
+}
+
