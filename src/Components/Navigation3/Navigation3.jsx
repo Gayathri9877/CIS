@@ -14,16 +14,16 @@ const Navigation3 = () => {
         <ul className="navbar-links ">
         <li><NavLink to="">Home</NavLink></li>
           <li><NavLink to="">About Us</NavLink></li>
-          <li><NavLink to="">Contact Us</NavLink></li>
-          <li><NavLink to="">News & Updates</NavLink></li>
-          <li><NavLink to="">FAQ & Help</NavLink></li>
+          <li><NavLink to="/ContactUSFull">Contact Us</NavLink></li>
+          <li><NavLink to="/NewsandUpdatesFull">News & Updates</NavLink></li>
+          <li><NavLink to="/FAQandHelpFull">FAQ & Help</NavLink></li>
           <li><NavLink to="">Legal & Privacy</NavLink></li>
          
         </ul>
       </div>
       <div className="navbar-right" style={{ marginRight: '20px' }}>
   <button className="user-button" >
-    <span className="username">Sign In</span>
+    <span className="username"><NavLink to="/LoginGeneralFull">Sign In</NavLink></span>
     <div className="profile-picture-frame">
       <img src="assets/images/SignIn.png" alt="Profile" className="profile-picture" />
     </div>
