@@ -20,30 +20,22 @@
 
 .fac-readmore-one{
     align-items: center;
-    width: 48%;
+    width: 580px;
     height: auto;
-    border: 1px solid black;
-    padding-right: 4rem;
+    margin-left: 0px;
+    margin-right: 5rem;
 }
 
 .fac-image{
     overflow: hidden;
-    width: 100%;
+    width: 580px;
     height: auto;
-    margin-left: 50px;
-}
-
-.fac-readmore-two{
-    align-items: center;
-    width: 48%;
-    height: auto;
-    border: 1px solid black;
-    margin-left: 60px;
+    margin-left: 0px;
 }
 
 .second-announce-container{
     display: block;
-    width: 75%;
+    width: 80%;
     align-items: center;
     height: auto;
     margin-left: 150px;
@@ -52,10 +44,11 @@
 
 .sac-image{
     width: 35%;
+    height: auto;
 }
 
 .sac-readmore{
-    border: 1px solid black;
+    
     margin-bottom: 40px;
     display: flex;
 }
@@ -94,3 +87,4 @@
     margin-left: 112px;
     margin-bottom: 30px;
 }
+
