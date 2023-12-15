@@ -1,5 +1,5 @@
 
-    .footer {
+    .footer-ft {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,7 +11,7 @@
     bottom: 0;
     margin-top:20px; 
     }
-  .text01{
+  .text01-ft{
     
     font-size: xx-large;
     color: #000066;
@@ -19,65 +19,65 @@
     font-weight: bold }
 
   
-  .column {
+  .column-ft {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
   }
   
-  .icon {
+  .icon-ft {
     display: flex;
     align-items: center;
     margin-top: 20px;
   }
   
-  .text {
+  .text-ft {
     margin: 5px 0;
   }
   
-  .title {
+  .title-ft {
     font-weight: bold;
     margin-bottom: 10px;
     
   }
   
-  .link,
-  .social-link {
+  .link-ft,
+  .social-link-ft{
     cursor: pointer;
     margin: 5px 0;
   }
   
-  .social-img {
+  .social-img-ft {
     width: 20px; 
     height: 20px; 
     margin-right: 5px;
   }
-  .social-icon {
+  .social-icon-ft {
     display: flex;
     align-items: center;
   }
 
-  .subpart{
+  .subpart-ft{
     font-size: 14px; 
     color: ash; 
     margin-left: 25px;
   }
 
-  .logo1{
+  .logo1-ft{
     width: 50px;
     height: 50px;
     
   }
-  .two-line-text {
+  .two-line-text-ft {
     display: flex;
     flex-direction: column;
   }
 
-  .text02{
+  .text02-ft{
     color: #000066;
     margin-left: 10px;
   }
-.text03{
+.text03-ft{
     font-size: 12px;
     margin-left: 10px;
     margin-top: 10px;

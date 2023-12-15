@@ -9,67 +9,67 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer ">
-      <div className="column">
-      <div className="icon">
-          <img src='assets\images\finger-print.png' alt='finger-print' className='logo1' />
+    <footer className="footer-ft ">
+      <div className="column-ft">
+      <div className="icon-ft">
+          <img src='assets\images\finger-print.png' alt='finger-print' className='logo1-ft' />
         
-        <div className="text01">CIS</div></div>
-        <div className="two-line-text">
-          <div className="text02">Criminal Identification System</div>
-          <div className="text02">Sri Lanka Police</div>
+        <div className="text01-ft">CIS</div></div>
+        <div className="two-line-text-ft">
+          <div className="text02-ft">Criminal Identification System</div>
+          <div className="text02-ft">Sri Lanka Police</div>
         </div>
-        <div className="text03">2023@cis.police.lk All rights reserved.</div>
+        <div className="text03-ft">2023@cis.police.lk All rights reserved.</div>
         
         </div>
 
-      <div className="column">
-        <div className="title">Quick Links</div>
-        <div className="link">Home Page</div>
-        <div className="link">About Us Page</div>
-        <div className="link">News & Updates</div>
-        <div className="link">FAQ and Help</div>
-        <div className="link">Legal and Privacy</div>
+      <div className="column-ft">
+        <div className="title-ft">Quick Links</div>
+        <div className="link-ft">Home Page</div>
+        <div className="link-ft">About Us Page</div>
+        <div className="link-ft">News & Updates</div>
+        <div className="link-ft">FAQ and Help</div>
+        <div className="link-ft">Legal and Privacy</div>
       </div>
-      <div className="column">
-        <div className="title">Contact Us</div>
-        <div className="textt"> Email</div>
-        <div className="subpart">cis@slpolice.lk</div>
-        <div className="text"> Phone Number</div>
-        <div className="subpart">0711234567</div>
+      <div className="column-ft">
+        <div className="title-ft">Contact Us</div>
+        <div className="text-ft"> Email</div>
+        <div className="subpart-ft">cis@slpolice.lk</div>
+        <div className="text-ft"> Phone Number</div>
+        <div className="subpart-ft">0711234567</div>
       </div>
-      <div className="column">
-        <div className="title">Social Media</div>
+      <div className="column-ft">
+        <div className="title-ft">Social Media</div>
 
-        <div className="social-links">
+        <div className="social-links-ft">
           {/* Facebook */}
-          <div className="social-link" onClick={() => openSocialLink('https://www.facebook.com/sl_policemedia')}>
-            <img src='assets\images\facebook.png' alt='Facebook' className='social-img' />
-            <span className="social-link-text">Facebook</span>
+          <div className="social-link-ft" onClick={() => openSocialLink('https://www.facebook.com/sl_policemedia')}>
+            <img src='assets\images\facebook.png' alt='Facebook' className='social-img-ft' />
+            <span className="social-link-text-ft">Facebook</span>
           </div>
 
           {/* Instagram */}
-          <div className="social-link" onClick={() => openSocialLink('https://www.instagram.com/sl_policemedia')}>
-            <img src='assets\images\instagram.png' alt='Instagram' className='social-img' />
-            <span className="social-link-text">Instagram</span>
+          <div className="social-link-ft" onClick={() => openSocialLink('https://www.instagram.com/sl_policemedia')}>
+            <img src='assets\images\instagram.png' alt='Instagram' className='social-img-ft' />
+            <span className="social-link-text-ft">Instagram</span>
           </div>
 
           {/* TikTok */}
-          <div className="social-link" onClick={() => openSocialLink('https://www.tiktok.com/sl_policemedia')}>
-            <img src='assets\images\tiktok.png' alt='TikTok' className='social-img' />
-            <span className="social-link-text">TikTok</span>
+          <div className="social-link-ft" onClick={() => openSocialLink('https://www.tiktok.com/sl_policemedia')}>
+            <img src='assets\images\tiktok.png' alt='TikTok' className='social-img-ft' />
+            <span className="social-link-text-ft">TikTok</span>
           </div>
 
           {/* Twitter */}
-          <div className="social-link" onClick={() => openSocialLink('https://www.twitter.com/sl_policemedia')}>
-            <img src='assets\images\twitter.png' alt='Twitter' className='social-img' />
-            <span className="social-link-text">Twitter</span>
+          <div className="social-link-ft" onClick={() => openSocialLink('https://www.twitter.com/sl_policemedia')}>
+            <img src='assets\images\twitter.png' alt='Twitter' className='social-img-ft' />
+            <span className="social-link-text-ft">Twitter</span>
           </div>
 
           {/* YouTube */}
-          <div className="social-link" onClick={() => openSocialLink('https://www.youtube.com/sl_policemedia')}>
-            <img src='assets\images\youtube.png' alt='YouTube' className='social-img' />
-            <span className="social-link-text">YouTube</span>
+          <div className="social-link-ft" onClick={() => openSocialLink('https://www.youtube.com/sl_policemedia')}>
+            <img src='assets\images\youtube.png' alt='YouTube' className='social-img-ft' />
+            <span className="social-link-text-ft">YouTube</span>
           </div>
         </div>
       </div>
