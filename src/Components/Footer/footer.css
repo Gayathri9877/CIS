@@ -46,6 +46,12 @@
     cursor: pointer;
     margin: 5px 0;
   }
+
+  /* change color of the footer links on hover  */
+  .link-ft:hover,
+  .social-link-ft:hover{
+    color: #0000ee;
+  }
   
   .social-img-ft {
     width: 20px; 
