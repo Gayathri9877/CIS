@@ -30,23 +30,24 @@ function ResetPassword() {
 
   return (
     <div className="container p-3 component-container-20p">
-      <div>  <p style={{fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', marginTop: '-70px', color:'#000066',}}>Criminal Identification System</p>
+      <div><p style={{fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', marginTop: '-70px', color:'#000066',}}>Criminal Identification System</p>
            <p style={{fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', marginBottom: '70px', color:'#000066'}}>Sri Lanka Police</p></div>
+     
       <div className="row my-3">
         <div className="col">
-          <p className="fs-2">Reset Password</p>
+          <p className="fs-2" style={{marginLeft:'400px'}}>Reset Password</p>
         </div>
       </div>
       {error === 'no-match' &&
         <div className="row my-3">
           <div className="col">
-            <p className="text-error-color">
+            <p className="text-error-color" style={{marginLeft:'400px'}}>
               No match between passwords. Try again!
             </p>
           </div>
         </div>
       }
-      <div className="row mt-3">
+      <div className="row mt-3" style={{marginLeft:'390px'}}>
         <div className="col">
           <p>New Password <span className="text-error-color">*</span></p>
         </div>
@@ -57,6 +58,7 @@ function ResetPassword() {
             type="password"
             className="form-input"
             name="password"
+            style={{width:'500px',  marginLeft:'400px'}}
             value={password}
             onChange={handleInput}
           />
@@ -65,13 +67,13 @@ function ResetPassword() {
       {error === 'length' &&
         <div className="row my-3">
           <div className="col">
-            <p className="text-error-color">
+            <p className="text-error-color" style={{marginLeft:'400px'}}>
               At least 8 characters needed
             </p>
           </div>
         </div>
       }
-      <div className="row mt-3">
+      <div className="row mt-3" style={{marginLeft:'390px'}}  >
         <div className="col">
           <p>Confirm Password <span className="text-error-color">*</span></p>
         </div>
@@ -81,19 +83,21 @@ function ResetPassword() {
           <input
             type="password"
             className="form-input"
+            style={{width:'500px', marginLeft:'400px'}}
             name="confirmPassword"
             value={confirmPassword}
             onChange={handleInput}
           />
         </div>
       </div>
-      <div className="row mt-5">
+      <div className="row mt-5" style={{marginLeft:'470px'}}>
         <div className="col">
-          <button className="form-button" onClick={handleReset}>
+          <button className="form-button"  onClick={handleReset}>
             Reset Password
           </button>
         </div>
       </div>
+    
     </div>
   );
 }
