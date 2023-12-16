@@ -4,7 +4,7 @@ import '../ComponentsGeneral.css';
 function VerificationCode() {
   const [inputCode, setInputCode] = useState([null, null, null, null]);
   const [error, setError] = useState(false);
-  const [proceednext, setProceednext] = useState(true)
+  
 
   const input_0 = useRef(null);
   const input_1 = useRef(null);
@@ -42,8 +42,6 @@ function VerificationCode() {
     const parsedCode = inputCode.reduce((code, current) => code + current);
     if (parsedCode === "0000") {
       setError(true);
-    }else{
-      setProceednext(false)
     }
   };
 
@@ -123,14 +121,14 @@ function VerificationCode() {
       ) : (
         <div className="row my-5">
           <div className="col">
-            <button
+           <a href='/ResetPasswordFull'> <button
               className="form-button"
               style={{width:'350px', marginLeft:'465px'}}
               ref={buttonRef}
               onClick={handleProceedButton}
             >
               Proceed
-            </button>
+            </button></a>
           </div>
         </div>
       )}
