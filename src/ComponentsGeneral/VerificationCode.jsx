@@ -4,6 +4,7 @@ import '../ComponentsGeneral.css';
 function VerificationCode() {
   const [inputCode, setInputCode] = useState([null, null, null, null]);
   const [error, setError] = useState(false);
+  const [proceednext, setProceednext] = useState(true)
 
   const input_0 = useRef(null);
   const input_1 = useRef(null);
@@ -41,27 +42,31 @@ function VerificationCode() {
     const parsedCode = inputCode.reduce((code, current) => code + current);
     if (parsedCode === "0000") {
       setError(true);
+    }else{
+      setProceednext(false)
     }
   };
 
   return (
     <div className="container p-3 component-container-general-30p">
+      <div>  <p style={{fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', marginTop: '-70px', color:'#000066',}}>Criminal Identification System</p>
+           <p style={{fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', marginBottom: '70px', color:'#000066'}}>Sri Lanka Police</p></div>
       <div className="row my-4">
         <div className="col">
-          <p className="fs-2">Enter 4 Digit Code</p>
+          <p className="fs-2" style={{marginLeft:'435px'}}>Enter 4 Digit Code</p>
         </div>
       </div>
       {error &&
         <div className="row">
           <div className="col">
-            <p className="text-error-color">
+            <p className="text-error-color" style={{marginLeft:'440px'}}>
               Invalid code. Try again!
             </p>
           </div>
         </div>
       }
       <div className="row my-4 justify-content-center">
-        <div className="col-3 centered-col">
+        <div className="col-1 centered-col">
           <input
             autoFocus
             type="text"
@@ -73,7 +78,7 @@ function VerificationCode() {
             ref={input_0}
           />
         </div>
-        <div className="col-3 centered-col">
+        <div className="col-1 centered-col">
           <input
             type="text"
             maxlength="1"
@@ -84,7 +89,7 @@ function VerificationCode() {
             ref={input_1}
           />
         </div>
-        <div className="col-3 centered-col">
+        <div className="col-1 centered-col">
           <input
             type="text"
             maxlength="1"
@@ -95,7 +100,7 @@ function VerificationCode() {
             ref={input_2}
           />
         </div>
-        <div className="col-3 centered-col">
+        <div className="col-1 centered-col">
           <input
             type="text"
             maxlength="1"
@@ -110,16 +115,17 @@ function VerificationCode() {
       {error ? (
         <div className="row my-4 justify-content-center">
           <div className="col centered-col">
-            <button className="form-button-outline">
+            <button className="form-button-outline" style={{marginLeft:'590px'}}>
               Resend code
             </button>
           </div>
         </div>
       ) : (
-        <div className="row my-4">
+        <div className="row my-5">
           <div className="col">
             <button
               className="form-button"
+              style={{width:'350px', marginLeft:'465px'}}
               ref={buttonRef}
               onClick={handleProceedButton}
             >

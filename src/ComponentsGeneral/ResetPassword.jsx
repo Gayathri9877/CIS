@@ -30,6 +30,8 @@ function ResetPassword() {
 
   return (
     <div className="container p-3 component-container-20p">
+      <div>  <p style={{fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', marginTop: '-70px', color:'#000066',}}>Criminal Identification System</p>
+           <p style={{fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 'bold', fontSize: '45px', textAlign: 'center', marginBottom: '70px', color:'#000066'}}>Sri Lanka Police</p></div>
       <div className="row my-3">
         <div className="col">
           <p className="fs-2">Reset Password</p>

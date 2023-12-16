@@ -124,7 +124,7 @@ const toggleSecondContainer9 = () => {
 
         <div className='second-announce-container'>
             <div className='sac-readmore'>
-            <img src="assets/images/sacimage.png" alt="sac" className="sac-image" />
+            <div style={{width: '400px'}}><img style={{width: '400px'}} src="assets/images/sacimage.png" alt="sac" className="sac-image" /></div>
             <div style={{display: 'block'}}>
             <p style={{fontSize: '24px', fontWeight: 'medium', fontFamily: 'sans-serif', marginLeft: '40px', marginTop: '20px'}}>4 Person arrested in Kandy due to the drug dealing</p>
             
@@ -143,7 +143,7 @@ const toggleSecondContainer9 = () => {
             </div>
 
             <div className='sac-readmore'>
-            <img src="assets/images/sacimage.png" alt="sac" className="sac-image" /> 
+            <div style={{width: '400px'}}><img style={{width: '400px'}} src="assets/images/sacimage.png" alt="sac" className="sac-image" /></div>
             <div style={{display: 'block'}}>
             <p style={{fontSize: '24px', fontWeight: 'medium', fontFamily: 'sans-serif', marginLeft: '40px', marginTop: '20px'}}>4 Person arrested in Kandy due to the drug dealing</p>  
             
@@ -161,7 +161,7 @@ const toggleSecondContainer9 = () => {
             </div>
             </div>
             <div className='sac-readmore'>
-            <img src="assets/images/sacimage.png" alt="sac" className="sac-image" />
+            <div style={{width: '400px'}}><img style={{width: '400px'}} src="assets/images/sacimage.png" alt="sac" className="sac-image" /></div>
             <div style={{display: 'block'}}>
             <p style={{fontSize: '24px', fontWeight: 'medium', fontFamily: 'sans-serif', marginLeft: '40px', marginTop: '20px'}}>4 Person arrested in Kandy due to the drug dealing</p>
             
@@ -179,7 +179,7 @@ const toggleSecondContainer9 = () => {
             </div>
             </div>
             <div className='sac-readmore'>
-            <img src="assets/images/sacimage.png" alt="sac" className="sac-image" />
+            <div style={{width: '400px'}}><img style={{width: '400px'}} src="assets/images/sacimage.png" alt="sac" className="sac-image" /></div>
             <div style={{display: 'block'}}>
             <p style={{fontSize: '24px', fontWeight: 'medium', fontFamily: 'sans-serif', marginLeft: '40px', marginTop: '20px'}}>4 Person arrested in Kandy due to the drug dealing</p>
             

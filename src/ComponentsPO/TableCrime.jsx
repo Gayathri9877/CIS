@@ -1,5 +1,6 @@
 import React from 'react';
-import '../Components.css'; 
+import '../Components.css';
+import DisplayBox from './DisplayBox';
 
  function TableCrime() {
   return (
@@ -7,7 +8,7 @@ import '../Components.css';
         <div className="registration-form-police">
         <div className="input-container-police">
           <label htmlFor="crimeID" className='p1-police'>Crime ID</label>
-          <input className='display-box-po-3'/>
+         <DisplayBox/>
         </div>
 
         <div className="input-container-police">
