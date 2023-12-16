@@ -11,7 +11,7 @@ const NavigationBar = () => {
       </div>
 
       <button
-        className="navbar-toggler"
+        className="navbar-toggler"z
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
