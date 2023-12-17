@@ -10,7 +10,7 @@ const Navigation3 = () => {
         <img src="assets\images\finger-print.png" alt="Icon" className="navbar-icon" style={{ marginLeft: '20px' }} />
         <span className="navbar-title"><h2>CIS</h2></span>
       </div>
-      <div className="navbar-center mt-2" >
+      <div className="navbar-center mt-2">
         <ul className="navbar-links ">
         <li><NavLink to="">Home</NavLink></li>
           <li><NavLink to="">About Us</NavLink></li>
@@ -23,7 +23,7 @@ const Navigation3 = () => {
       </div>
       <div className="navbar-right" style={{ marginRight: '20px' }}>
   <button className="user-button" >
-    <span className="username"><NavLink to="/LoginGeneralFull">Sign In</NavLink></span>
+    <span className="username"> <div className="navbar-links-signin "><NavLink to="/LoginGeneralFull">Sign In</NavLink></div></span>
     <div className="profile-picture-frame">
       <img src="assets/images/SignIn.png" alt="Profile" className="profile-picture" />
     </div>

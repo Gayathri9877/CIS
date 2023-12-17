@@ -70,17 +70,19 @@
 }
 
 .Search-investigation{
-  margin-left: 80px;
+  margin-left: 81px;
 }
 
 .Search-options1{
-  margin-left: -25px;
+  margin-left: -16px;
   margin-top: 50px;
+  
 }
 
 .Search-searchtypebox{
     margin-left: -82px;
-    margin-top: -50px;
+    margin-top: -20px;
+    
 }
 
 .Search-searchbutton{
@@ -105,8 +107,8 @@
 
 .Biometrics-investigation{
     margin-top: 0px;
-    margin-left: 83px;
-    margin-right: 100px;
+    margin-left: 85px;
+    margin-right: 90px;
 }
 
 .Biometrics-photo-box{
@@ -114,9 +116,9 @@
 }
 
 .Biometrics-options{
-  margin-top: 20px;
+  margin-top: 5px;
   margin-left: 198px;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
 }
 
 .Biometrics-buttons{

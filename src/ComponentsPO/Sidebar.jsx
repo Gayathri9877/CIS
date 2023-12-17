@@ -5,7 +5,7 @@ import {Link } from "react-router-dom";
 const Sidebar = () => {
   const [hoveredTopic, setHoveredTopic] = useState(null);
 
-  const topics = ['crime 1', 'crime 2', 'crime 3', 'crime 4', 'crime 5', 'crime 6'];
+  const topics = ['crime 1'];
 
   const handleMouseEnter = (index) => {
     setHoveredTopic(index);
@@ -22,7 +22,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       {topics.map((topic, index) => (
-       <Link to="/Crime" key={index} style={linkStyle}>   
+       
         <div
           key={index}
           className={`topic ${index % 2 === 0 ? 'white' : 'purple'} ${hoveredTopic === index ? 'dark-blue' : ''}`}
@@ -31,7 +31,7 @@ const Sidebar = () => {
         >
           {topic}
         </div>
-        </Link>
+        
       ))}
     </div>
   );

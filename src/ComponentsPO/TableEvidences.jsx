@@ -7,17 +7,17 @@ function TableEvidences() {
     <div className="registration-form-police">
     <div className="input-container-police">
       <label htmlFor="crimeID" className='p1-police'>Crime ID</label>
-      <input className='display-box-po-3'/>
+      <div style={{width:'530px', minHeight:'40px', backgroundColor:'#e0e1fc'}}></div>
     </div>
 
     <div className="input-container-police">
       <label htmlFor="crimeID" className='p1-police'>Evidence ID</label>
-      <input className='display-box-po-3'/>
+      <div style={{width:'530px', minHeight:'40px', backgroundColor:'#e0e1fc'}}></div>
     </div>
 
     <div className="input-container-police">
-      <label htmlFor="area" className='p1-police'>Testimonial(about the Evidence| optional)</label>
-      <input className='display-box-po-4'/>
+      <label htmlFor="area" className='p1-police'>Testimonial(optional)</label>
+      <div style={{width:'530px', minHeight:'40px', backgroundColor:'#e0e1fc'}}></div>
     </div>
 
   <div className="input-container-police">

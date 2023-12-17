@@ -14,8 +14,8 @@ function SearchResult() {
     <NavigationBarPO/>
   </nav>
     <div className='Searchresult-container'>
-       <Circle/>
-       <Rectangle/>
+      <div style={{marginLeft:'-5px'}}><Circle/></div> 
+       <div><Rectangle/></div>
        <div className='sr'>
        <Name/>
        <Sidebar/>

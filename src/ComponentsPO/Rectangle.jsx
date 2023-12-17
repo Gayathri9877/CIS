@@ -5,12 +5,12 @@ const Rectangle = () => {
     <div
       style={{
         position: 'absolute',
-        width: '1325px',
-        height: '30px',
+        width: '1000px',
+        height: '25px',
         left: '1px',
-        top: '180px',
+        top: '160px',
         background: '#000066',
-        marginLeft: '206px',
+        marginLeft: '270px',
         marginTop: '5px',
       }}
     ></div>

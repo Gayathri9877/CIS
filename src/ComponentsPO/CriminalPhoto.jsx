@@ -7,7 +7,7 @@ const Circle = ({ profilePhotoUrl }) => {
       {profilePhotoUrl ? (
         <img className='profile-userside' src={profilePhotoUrl} alt="Profile" />
       ) : (
-        <p className='no-photo-police'>not added</p>
+        <p className='no-photo-police'></p>
       )}
     </div>
   );

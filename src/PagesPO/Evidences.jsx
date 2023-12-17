@@ -8,7 +8,7 @@ import NavigationBarPO from '../ComponentsPO/NavigationbarPO';
 
 function Evidences() {
   return (
-    <div>
+    <div style={{minHeight:'800px'}}>
     <nav>
     <NavigationBarPO/>
   </nav>

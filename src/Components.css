@@ -5,7 +5,7 @@
     align-items: center;
     background-color: #E0E1FC;
     color: black;
-    height: 100px; 
+    height: 80px; 
     padding: 0 20px;
     border-radius: 0 0 20px 20px;
    
@@ -282,7 +282,7 @@ select {
   }
  
   .button-scan-face {
-    background-color: #B72E2E;
+    background-color: #000066;
     margin-left: 1000px;
   }
 
@@ -411,11 +411,11 @@ select {
 /*SideBar.css*/
 
 .sidebar {
-  width: 250px;
-  background-color: white;
+  width: 230px;
+  background-color: #e0e1fc;
   color: white;
-  padding: 10px;
-  height: 400px;
+  padding: 5px;
+  min-height: 400px;
   margin-top: 180px;
 }
 
@@ -426,7 +426,8 @@ select {
 }
 
 .topic.white {
-  background-color: #E0E1FC;
+  background-color: white;
+  border-radius: 0.3rem;
   color: black;
 }
 
@@ -441,47 +442,47 @@ select {
 }
 
 .topic:hover {
-  background-color: darkblue;
+  background-color: #000066;
 }
 
 /* SubNavigationbar.css */
 
-.sub-navigation {
+.navbar-links-sabnav {
+  list-style: none;
   display: flex;
-  background-color:white;
-  color: black;
-  padding: 2px;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
-  height: 30px;
+ 
 }
 
-.right-section {
-  flex: 100%; 
-  display: flex;
-  justify-content: flex-end; 
+.navbar-links-sabnav a {
+  text-decoration:none;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: auto;
+  
 }
 
-
-.nav-item-box {
-  cursor: pointer;
-  padding: 0px;
+.sabnav-hov {
   background-color: #000066;
-  transition: background-color 0.3s;
-  width: 33.333%;
-  height: 30px;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.nav-item-box:hover,
-.active {
-  background-color: #E0E1FC;
-  color: black;
+/* Hover effect */
+.sabnav-hov:hover {
+  background-color: #e0e1fc;
+}
+
+/* Additional styles for the inner <p> element */
+.sabnav-hov p {
+  color: white;
   font-weight: bold;
 }
+
+
+
 
 /*Name.css*/
 

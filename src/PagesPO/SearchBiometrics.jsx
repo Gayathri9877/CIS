@@ -35,13 +35,13 @@ function SearchBiometrics() {
           <img
             src={URL.createObjectURL(uploadedFile)}
             alt="Uploaded"
-            style={{ maxWidth: '200px', maxHeight: '200px' }}
+            style={{ maxWidth: '200px', maxHeight: '200px',border:'2px solid black' }}
           />
-          <button onClick={() => setUploadedFile(null)}>Remove Photo</button>
+          <button style={{width:'150px', height:'40px', borderRadius:'0.5rem', backgroundColor:'#B72E2E', color:'white'}} onClick={() => setUploadedFile(null)}>Remove</button>
         </div>
       )}
       </div>
-      <div className='Biometrics-searchbutton'>
+      <div className='Biometrics-searchbutton' >
         <SearchButtonPO/>
       </div>
     </div>

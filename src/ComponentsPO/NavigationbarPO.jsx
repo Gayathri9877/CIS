@@ -23,7 +23,7 @@ const NavigationBarPO = () => {
       </div>
       <div className="navbar-right" style={{ marginRight: '20px' }}>
   <button className="user-button" >
-    <span className="username">Kaushalya Hulathdoowage</span>
+    <span className="username">Kaushalya</span>
     <div className="profile-picture-frame">
       <img src={man} alt="Profile" className="profile-picture" />
     </div>

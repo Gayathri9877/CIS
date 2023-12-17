@@ -1,46 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../Components.css';
-import {Link } from "react-router-dom";
+
 
 const SubNavigationbar = () => {
-  const [activeTab, setActiveTab] = useState('Crime'); // Set the default active tab to 'Crime'
-
-  const handleTabClick = (tabName) => {
-    setActiveTab(tabName);
-  };
-
-  const linkStyle = {
-    textDecoration: 'none',
-    color: 'white',   
-  };
-
-  const linkStyleHovered = {
-    color: 'black',       // Hovered (active) text color
-  };
-
   return (
-    <div className="sub-navigation">
-      <div className="right-section">
-       <div
-          className={`nav-item-box ${activeTab === 'Crime' ? 'active' : ''}`}
-          onClick={() => handleTabClick('Crime')}
-        > 
-         <Link to="/Crime" style={activeTab === 'Crime' ? { ...linkStyle, ...linkStyleHovered } : linkStyle} > Crime</Link>
-        </div>
-        <div
-          className={`nav-item-box ${activeTab === 'Victims' ? 'active' : ''}`}
-          onClick={() => handleTabClick('Victims')}
-        >
-         <Link to="/Victims" style={activeTab === 'Victims' ? { ...linkStyle, ...linkStyleHovered } : linkStyle}> Victims</Link>
-        </div>
-        <div
-          className={`nav-item-box ${activeTab === 'Evidences' ? 'active' : ''}`}
-          onClick={() => handleTabClick('Evidences')}
-        >
-         <Link to="/Evidences" style={activeTab === 'Evidences' ? { ...linkStyle, ...linkStyleHovered } : linkStyle}> Evidences</Link>
-        </div>
+    <nav>
+      <div style={{marginLeft:'200px', marginTop:'30px'}} >
+        <ul className="navbar-links-sabnav">
+          <li ><NavLink to="/SearchResult"><button className='sabnav-hov' style={{width:'250px', height:'30px', backgroundColor:'#000066'}}><p style={{color:'white', fontWeight:'bold'}}>Criminal</p></button></NavLink></li>
+          <li ><NavLink to="/Crime"><button className='sabnav-hov' style={{width:'250px', height:'30px', backgroundColor:'#000066'}}><p style={{color:'white', fontWeight:'bold'}}>Crime</p></button></NavLink></li>
+          <li ><NavLink to="/Victims"><button className='sabnav-hov' style={{width:'250px', height:'30px', backgroundColor:'#000066'}}><p style={{color:'white', fontWeight:'bold'}}>Victims</p></button></NavLink></li>
+          <li ><NavLink to="/Evidences"><button className='sabnav-hov' style={{width:'250px', height:'30px', backgroundColor:'#000066'}}><p style={{color:'white', fontWeight:'bold'}}>Evidences</p></button></NavLink></li>
+        </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

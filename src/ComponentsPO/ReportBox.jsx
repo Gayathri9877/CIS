@@ -60,7 +60,7 @@ function ReportBox() {
         />
       </div>
 
-      <Link to="/ReportResponse">
+      <Link to="">
         <button className="Request-button-PO" onClick={handleSearch}>
           Send Request
         </button>
