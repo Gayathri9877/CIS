@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
 
 const SearchBar = ({ onSearch }) => {
   const handleSubmit = (event) => {
@@ -34,7 +36,7 @@ const SearchBar = ({ onSearch }) => {
       </div>
       <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
         <button type="submit" style={{ fontSize: '16px', color: 'white', background: '#000066', border: 'none', borderRadius: '10px', padding: '8px 16px', width: '100%' }}>
-          Search
+        <Link to="/FullUserPersona">Search</Link>
         </button>
       </div>
     </form>
