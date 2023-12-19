@@ -12,7 +12,7 @@ const Navigation3 = () => {
       </div>
       <div className="navbar-center mt-2">
         <ul className="navbar-links ">
-        <li><NavLink to="">Home</NavLink></li>
+        <li><NavLink to="/FullsystemHome">Home</NavLink></li>
           <li><NavLink to="">About Us</NavLink></li>
           <li><NavLink to="/ContactUSFull">Contact Us</NavLink></li>
           <li><NavLink to="/NewsandUpdatesFull">News & Updates</NavLink></li>

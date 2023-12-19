@@ -25,15 +25,12 @@ const BiometricsButtons = ({ onFileUpload }) => {
 
   return (
     <div className="biometrics-buttons">
-      <button className="button button-scan-face" onClick={handleScanFace}>
+    <button className="button button-scan-face" onClick={handleScanFace}>
         Scan Face
       </button>
-
       <button className="button button-upload-photo" onClick={handleUploadPhoto}>
         Upload photo
       </button>
-
-      {/* Hidden file input */}
       <input
         type="file"
         ref={fileInputRef}

@@ -4,9 +4,9 @@ import '../Components.css';
 function SearchButtonPO({ handleSearch }) {
   return (
    
-    <button className="search-button-PO" onClick={handleSearch}>
+    <a href='/SearchResult'><button className="search-button-PO" onClick={handleSearch}>
       Search
-    </button>
+    </button></a>
     
   );
 }
