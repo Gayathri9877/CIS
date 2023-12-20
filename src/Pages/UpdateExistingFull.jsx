@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Components/Navigation/Navigation';
 import UpdateExistingCriminalSuspect from '../Components/UpdateExistingCriminalSuspect/UpdateExistingCriminalSuspect';
-import Footer from '../Components/Footer/footer';
+
 
 
 export default function UpdateExistingFull() {
@@ -11,9 +11,7 @@ export default function UpdateExistingFull() {
       <div style={{ flex: 1 }}>
         <UpdateExistingCriminalSuspect/>
       </div>
-      <div style={{ flex: 0 }}>
-        <Footer/>
-      </div>
+  
     </div>
   );
 }

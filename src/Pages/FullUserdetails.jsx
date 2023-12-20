@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation2 from '../Components/Navigationbar2/Navigation2';
 import RegistrationPage from '../Components/RegistrationPage/RegistrationPage'; 
-import Footer from '../Components/Footer/footer';
+
 
 
 export default function FullUserdetails() {
@@ -11,9 +11,7 @@ export default function FullUserdetails() {
       <div style={{ flex: 1 }}>
         <RegistrationPage/>
       </div>
-      <div style={{ flex: 0 }}>
-        <Footer/>
-      </div>
+   
     </div>
   );
 }

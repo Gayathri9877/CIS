@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Components/Navigation/Navigation';
 import UpdateCriminalSuspect from '../Components/UpdateCriminalSuspect/UpdateCriminalSuspect';
-import Footer from '../Components/Footer/footer';
+
 
 
 export default function UpdateCriminalSuspectFull() {
@@ -11,9 +11,7 @@ export default function UpdateCriminalSuspectFull() {
       <div style={{ flex: 1 }}>
         <UpdateCriminalSuspect/>
       </div>
-      <div style={{ flex: 0 }}>
-        <Footer/>
-      </div>
+      
     </div>
   );
 }

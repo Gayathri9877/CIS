@@ -46,6 +46,22 @@
     
   }
 
+   
+  .navbar-links-signin {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .navbar-links-signin a {
+    text-decoration:none;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: auto;
+    
+  }
+
  
 
 .user-button {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation2 from '../Components/Navigationbar2/Navigation2';
 import RadioButttonfull from '../Components/RadioButttonfull/RadioButttonfull';
-import Footer from '../Components/Footer/footer';
+
 
 
 export default function Suspect() {
@@ -11,9 +11,7 @@ export default function Suspect() {
       <div style={{ flex: 1 }}>
         <RadioButttonfull/>
       </div>
-      <div>
-        <Footer/>
-      </div>
+
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Components/Navigation/Navigation';
 import RegisterCriminalSuspect from '../Components/RegisterCriminalSuspect/RegisterCriminalSuspect';
-import Footer from '../Components/Footer/footer';
+
 
 
 export default function FullRegisterCriminalSuspect() {
@@ -12,7 +12,7 @@ export default function FullRegisterCriminalSuspect() {
         <RegisterCriminalSuspect/>
       </div>
       <div style={{ flex: 0 }}>
-        <Footer/>
+      
       </div>
     </div>
   );
