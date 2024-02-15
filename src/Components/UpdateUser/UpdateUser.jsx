@@ -144,7 +144,7 @@ const RegistrationPage = () => {
         </div>
         <div className="input-container">
           <label htmlFor="photo" className="p1">
-            Photo of the Criminal
+            Photo of the User
           </label>
           <input
             type="file"

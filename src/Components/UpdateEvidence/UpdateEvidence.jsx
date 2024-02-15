@@ -111,7 +111,7 @@ const RegisterEvidence = () => {
         </div>
         <div className="input-container">
           <label htmlFor="victimPhotos" className="p1">
-            Photos of Victim
+            Photos of Evidences
           </label>
           <input
             type="file"

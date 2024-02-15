@@ -74,9 +74,9 @@ function Login() {
           <div style={{marginLeft: '300px', marginTop: '-22px'}} >Remember me</div>
         </div>
         <div className="col" style={{marginLeft:'-130px'}}>
-          <button className="form-button" style={{width:'180px'}} onClick={handleSignIn}>
+          <a href='/HomePO'><button className="form-button" style={{width:'180px'}} onClick={handleSignIn}>
             Sign In
-          </button>
+          </button></a>
         </div>
       </div>
       </div>
